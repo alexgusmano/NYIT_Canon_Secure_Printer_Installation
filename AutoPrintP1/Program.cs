@@ -38,6 +38,7 @@ namespace AutoPrintP1
             
             var pInstallx64 = ""+home+"PrinterInstall\\x64\\Driver\\cns30ma64.inf";  //64bit driver C:\\Users\\Alexander\\Desktop\\PrinterInstall\\x64\\Driver\\cns30ma64.inf
             var pConfigx64BnW = "" + home + "\\PrinterInstall\\x64\\CSP_B&W.reg";//BnW.reg
+            var pConfigx64Color = "" + home + "\\PrinterInstall\\x64\\CSP_Color.reg";//Color.reg
             var pServer = "acaduniflow.nyit.edu";
             var pName = "Canon_Secure_Print";
             //When importing registry key it does import the settings for the printer
@@ -111,6 +112,22 @@ namespace AutoPrintP1
                     printKeyAddBnW2.SetValue("CommandTimeout",120, Microsoft.Win32.RegistryValueKind.DWord);
                     printKeyAddBnW2.SetValue("DataTimeout",300, Microsoft.Win32.RegistryValueKind.DWord);
                     printKeyAddBnW2.Close();
+                    
+                    ///////////Add ColorPort////////////
+                    Microsoft.Win32.RegistryKey printKeyAddColor1;
+                    printKeyAddColor1 = Microsoft.Win32.Registry.LocalMachine.CreateSubKey("SYSTEM\\CurrentControlSet\\Control\\Print\\Monitors\\LPR Port\\Ports\\acaduniflow.nyit.edu:Canon_Secure_Print_Color");
+                    printKeyAddColor1.SetValue("Server Name", "acaduniflow.nyit.edu");
+                    printKeyAddColor1.SetValue("Printer Name", "Canon_Secure_Print_Color");
+                    printKeyAddColor1.SetValue("OldSunCompatibility", 00000000, Microsoft.Win32.RegistryValueKind.DWord);
+                    printKeyAddColor1.SetValue("HpUxCompatibility", 00000000, Microsoft.Win32.RegistryValueKind.DWord);
+                    printKeyAddColor1.SetValue("EnableBannerPage", 00000000, Microsoft.Win32.RegistryValueKind.DWord);
+                    printKeyAddColor1.Close();
+
+                    Microsoft.Win32.RegistryKey printKeyAddColor2;
+                    printKeyAddColor2 = Microsoft.Win32.Registry.LocalMachine.CreateSubKey("SYSTEM\\CurrentControlSet\\Control\\Print\\Monitors\\LPR Port\\Ports\\acaduniflow.nyit.edu:Canon_Secure_Print_Color\\Timeouts");
+                    printKeyAddColor2.SetValue("CommandTimeout", 120, Microsoft.Win32.RegistryValueKind.DWord);
+                    printKeyAddColor2.SetValue("DataTimeout", 300, Microsoft.Win32.RegistryValueKind.DWord);
+                    printKeyAddColor2.Close();
 
                     
 
@@ -135,6 +152,18 @@ namespace AutoPrintP1
                         pDll1.Start();
                         pDll1.WaitForExit();
                     }
+                    
+                    ////////////////////Install Color///////////////////
+
+                    Microsoft.Win32.RegistryKey printerColorExist = Microsoft.Win32.Registry.LocalMachine.OpenSubKey("SYSTEM\\CurrentControlSet\\Control\\Print\\Printers\\Canon Secure Print Color", false);
+
+                    if (printerColorExist == null)//registry key doesn't exist
+                    {
+                        pDll1.StartInfo.FileName = "rundll32.exe";
+                        pDll1.StartInfo.Arguments = "printui.dll,PrintUIEntry /if /b \"Canon Secure Print Color\" /f \"" + home + "PrinterInstall\\x64\\Driver\\cns30ma64.inf\" /r acaduniflow.nyit.edu:canon_secure_print_color /m \"Canon Generic PS3 Driver2\" /z /u";
+                        pDll1.Start();
+                        pDll1.WaitForExit();
+                    }
 
                     
 
@@ -155,6 +184,17 @@ namespace AutoPrintP1
                         pReg1.StartInfo.WindowStyle = ProcessWindowStyle.Minimized;
                         pReg1.Start();
                         pReg1.WaitForExit();
+                    }
+                    
+                    //////////////////Configure_Color_Printer///////////////
+
+                    //if (printerColorExist != null)//registry key exists
+                    {
+                        pReg2.StartInfo.FileName = "cmd.exe";
+                        pReg2.StartInfo.Arguments = "/c reg import " + pConfigx64Color + "";
+                        pReg2.StartInfo.WindowStyle = ProcessWindowStyle.Minimized;
+                        pReg2.Start();
+                        pReg2.WaitForExit();
                     }
                     
                     
