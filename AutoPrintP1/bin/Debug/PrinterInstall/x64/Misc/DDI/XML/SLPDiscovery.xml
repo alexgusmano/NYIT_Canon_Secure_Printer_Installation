@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+*************************************************************************
+* Copyright CANON INC. 1999                                             *
+*************************************************************************
+-->
+<!--
+*************************************************************************
+* Ver3.00 Generic PS Installer                                            *
+*************************************************************************
+-->
+<discovery xmlns="urn:slpdiscovery">
+  <refreshRate>60</refreshRate>
+  <timeout>4</timeout>
+  <destinationAddressIPv6>ff02::1</destinationAddressIPv6>
+  <methodList onlyMatching="true">
+    <!-- SLP method to find "service:printer" devices -->
+    <method name="Test"
+            serviceType="printer.canon">
+      <AttributeList>
+        <devNameOID>x-can-PdInfoMachineName</devNameOID>
+        <devTypeOID>x-can-PdInfoProductName</devTypeOID>
+        <sysDescOID>sysDescr</sysDescOID>
+      </AttributeList>
+      <deviceList>
+
+			</deviceList>
+		</method>
+	</methodList>
+</discovery>

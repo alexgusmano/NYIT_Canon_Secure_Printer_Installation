@@ -1,0 +1,1261 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:hta="urn:HTMLApplication">
+	<head>
+		<meta name="Generator" content="CAESAR" />
+		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
+		<title>Canon Generic PS3 Driver2 - Version 3.00 for Microsoft Windows</title>
+		<hta:application id="id_canon_main_window" applicationname="canon_main_window" border="thick" borderstyle="normal" caption="yes" maximizebutton="yes" minimizebutton="yes" showintaskbar="yes" singleinstance="no" sysmenu="yes" version="1.0" windowstate="normal" contextmenu="yes" navigable="yes" />
+		<style type="text/css">div.list{display:list-item!important;list-style-type:Disc;margin-left:40px!important;padding-left:5px!important;}table div.list{margin-left:20px!important;padding-left:5px!important;}div.dash{display:list-item!important;list-style-type:Circle;margin-left:65px!important;padding-left:5px!important;}table div.dash{margin-left:40px!important;padding-left:5px!important;}div.step_sub{display:list-item!important;list-style-type:Square;margin-left:30px!important;padding-left:5px!important;}div.list_link{display:list-item!important;list-style-type:Square;margin-left:50px!important;padding-left:5px!important;}div.h1{background:#F3F8FA!important;}div.h2,div.h2_2line,div.h2_3line{background:#F3F8FA!important;}div.h3{background:#F3F8FA!important;}thead.table_important td.table_important_col_0,thead.table_note td.table_note_col_0{padding:2px 5px 2px 5px!important;}</style>
+		<style type="text/css" >
+			<!--
+*{
+	font-family:"Arial","Helvetica",Sans-serif;
+	/*margin:0;*/
+	/*padding:0;*/
+	/*border:0;*/
+	/*background-color:Transparent;*/
+	font-size:100%;
+	/*font-style:Normal;*/
+	text-decoration:None;
+}
+html{
+	border:0;
+}
+body{
+	margin:0;
+	padding:0;
+	background:#FFFFFF;
+}
+span{
+	color:Inherit;
+}
+div#id_content a{
+	text-decoration:None;
+}
+div#id_content a:link{
+	color:#3366A5;
+	text-decoration:None;
+}
+div#id_content a:visited{
+	color:#3366A5;
+	text-decoration:None;
+}
+div#id_content a:hover{
+	color:#EC6700;
+	background-color:#FFFFCC;
+	text-decoration:Underline;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.chapter_title{
+	background:#4682B4;
+	padding:2px 5px 2px 5px;
+	border-bottom:Solid 1px #4682B4;
+	font-weight:Bold;
+	font-size:80%;
+	margin-bottom:16px;
+	text-align:Right;
+	color:#FFFFFF;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.h1{
+	padding:32px 0 2px 8px;
+	border-bottom:Solid 1px #4682B4;
+	background:#F3F8FA;
+	font-weight:Bold;
+	font-size:120%;
+	margin-bottom:16px;
+	vertical-align:Bottom;
+	text-align:Left;
+	color:#000080;
+	position:Relative;
+}
+div.h1 a{
+	position:Absolute;
+	*position:Static!important;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.h2,
+div.h2_2line,
+div.h2_3line{
+	border:Solid 1px #4682B4;
+	padding:5px;
+	margin:30px 10px 5px 10px;
+	font-size:90%;
+	font-weight:Bold;
+	background:#F3F8FA;
+	color:#000080;
+}
+div.h2 a,
+div.h2_2line a,
+div.h2_3line a{
+	font-weight:Bold;
+	text-decoration:None;
+	color:#0000FF;
+}
+div.h2 img,
+div.h2_2line img,
+div.h2_3line img{
+	vertical-align:Middle;
+	margin-right:2px;
+	margin-left:0px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.h3{
+	padding:5px;
+	margin:25px 10px 5px 10px;
+	font-size:90%;
+	font-weight:Bold;
+	background:#F3F8FA;
+	border-bottom:Solid 1px #87CEEB;
+	color:#000080;
+}
+div.h3 a{
+	font-weight:Bold;
+	text-decoration:None;
+	color:#0000FF;
+}
+div.h3 img{
+	vertical-align:Middle;
+	margin-right:2px;
+	margin-left:0px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.h4{
+	margin:20px 10px 5px 10px;
+	font-weight:Bold;
+	font-size:90%;
+	border-Bottom:Solid 1px #87CEEB;
+	background:#FFFFFF;
+	padding:0px 5px;
+	color:#000080;
+}
+div.h4 img{
+	vertical-align:Middle;
+	margin-right:2px;
+	margin-left:0px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.h5{
+	margin:20px 10px 5px 15px;
+	font-weight:Bold;
+	font-size:80%;
+	color:#000080;
+}
+div.h5 img{
+	vertical-align:Middle;
+	margin-right:5px;
+	margin-left:4px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.h6{
+	margin:15px 10px 5px 30px;
+	font-weight:Bold;
+	font-size:80%;
+	color:#000080;
+}
+div.h6 img{
+	vertical-align:Middle;
+	margin-right:2px;
+	margin-left:0px;
+}
+table div.h6{
+	margin-left:0px;
+	margin-top:10px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.text{
+	font-size:80%;
+	margin:5px 10px 5px 30px;
+	color:#000000;
+}
+table div.text{
+	margin:3px 0 0 0;
+}
+div.text img{
+	vertical-align:Middle;
+}
+table div.text img{
+	vertical-align:Middle;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.text_level1{
+	font-size:80%;
+	margin:5px 10px 5px 40px;
+	color:#000000;
+}
+table div.text_level1{
+	margin:3px 0 0 10px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.text_level2{
+	font-size:80%;
+	margin:5px 10px 5px 50px;
+	color:#000000;
+}
+table div.text_level2{
+	margin:3px 0 0 20px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.text_level3{
+	font-size:80%;
+	margin:5px 10px 5px 60px;
+	color:#000000;
+}
+table div.text_level3{
+	margin:3px 0 0 30px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.text_center{
+	text-align:Center;
+	font-size:80%;
+	color:#000000;
+}
+table div.text_center{
+	margin:3px 0 0 0;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.text_right{
+	text-align:Right;
+	font-size:80%;
+	color:#000000;
+	margin-right:10px;
+}
+table div.text_right{
+	margin-right:0px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.annotation{
+	font-size:75%;
+	margin:0px 10px 5px 55px;
+	text-indent:-1.5em;
+	color:#000000;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.list{
+	background:Transparent;
+	_background:Transparent;
+	margin-left:30px;
+	margin-right:10px;
+	margin-top:2px;
+	margin-bottom:2px;
+	padding-left:20px;
+	padding-top:0px;
+	font-weight:Normal;
+	font-size:80%;
+	color:#000000;
+}
+table div.list{
+	margin-left:0px;
+}
+div.list img{
+	vertical-align:Top;
+}
+table div.list img{
+	vertical-align:Top;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+div.dash{
+	margin-left:50px;
+	margin-right:10px;
+	margin-top:2px;
+	margin-bottom:2px;
+	font-weight:Normal;
+	font-size:80%;
+	background:Transparent;
+	_background:Transparent;
+	padding:0px 0px 0px 20px;
+	color:#000000;
+}
+*:first-child+html div.dash{
+	background:Transparent;
+}
+table div.dash{
+	margin-left:12px;
+}
+div.dash img{
+	vertical-align:Top;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.example{
+	font-size:80%;
+	font-family:Monospace;
+	margin:5px 10px 5px 30px;
+	clear:Both;
+	background:#707080;
+	padding:5px;
+	color:#FFFFFF;
+}
+div#id_content div.example a:link{
+	color:#0000FF;
+	text-decoration:None;
+}
+div#id_content div.example a:visited{
+	color:#0000FF;
+	text-decoration:None;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.path{
+	padding:3px 10px 3px 20px;
+	font-size:80%;
+	margin:0px 30px;
+	background:Transparent;
+	_background:Transparent;
+	color:#666666;
+}
+div.path img{
+	vertical-align:Middle;
+}
+table div.path{
+	margin-left:0px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.step_number{
+	background:#F8F8F8;
+	font:Bold 200% "Arial";
+	color:#4682B4;
+	padding:0px 5px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:20px;
+	margin-bottom:0px;
+}
+div.step_number span{
+	font:Bold 100% "Arial";
+	color:#4682B4;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.step_path{
+	padding:3px 10px 3px 30px;
+	font-size:80%;
+	margin:0px 10px;
+	background:#F8F8F8;
+	_background:#F8F8F8;
+	color:#666666;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.step_text{
+	font-weight:Bold;
+	padding:0px 10px 15px 5px;
+	font-size:80%;
+	margin:0px 10px 10px 10px;
+	background:#F8F8F8;
+	color:#000000;
+}
+div.step_text img{
+	vertical-align:Middle;
+}
+@media print{div.step_text{
+	padding:0px 10px 20px 5px;
+}}
+/*-----------------------------------------------------------------------------------------------*/
+div.step_sub{
+	font-size:80%;
+	font-weight:Bold;
+	margin:10px 10px 5px 15px;
+	padding-left:15px;
+	background:Transparent;
+	_background:Transparent;
+	color:#000000;
+}
+div.step_sub img{
+	vertical-align:Top;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.figure{
+	text-align:Left;
+	margin-left:30px;
+	margin-bottom:10px;
+}
+table div.figure{
+	margin-left:0;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.link{
+	margin:10px;
+	font-size:80%;
+	color:#3366A5;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.link a{
+	text-decoration:None;
+	padding-left:10px;
+	background:Transparent;
+	_background:Transparent;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.list_link{
+	background:Transparent;
+	_background:Transparent;
+	margin-left:30px;
+	margin-right:10px;
+	margin-bottom:0px;
+	padding-left:20px;
+	padding-top:1px;
+	font-weight:Normal;
+	font-size:80%;
+	color:#3366A5;
+}
+table div.list_link{
+	margin-left:0px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.link_to_top{
+	text-align:Right;
+	padding:5px 10px 30px 10px;
+	font-size:80%;
+	color:#3366A5;
+	border-top:Dotted 1px #87CEEB;
+	margin-top:30px;
+}
+@media print{div.link_to_top{
+	display:None;
+}}
+div.link_to_top a{
+	text-decoration:None;
+	padding-left:12px;
+	background:Transparent;
+	_background:Transparent;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.trouble_shooting{
+	margin:10px 10px 10px 30px;
+}
+table.trouble_shooting{
+	border-collapse:Collapse;
+	table-layout:Fixed;
+}
+td.trouble_shooting{
+	border:Solid 1px #FFFFFF;
+}
+td.trouble_shooting_col_0{
+	padding:5px;
+	vertical-align:Middle;
+	font-size:100%;
+	width:80px;
+	background:#C0C0C0;
+	padding-bottom:10px;
+}
+td.trouble_shooting_col_1{
+	background:#EFEFEF;
+	padding-top:5px;
+	padding-bottom:10px;
+	padding-left:5px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.outline{
+	margin:10px 10px 10px 30px;
+}
+table.outline{
+	border-collapse:Collapse;
+	font-size:100%;
+}
+td.outline{
+	padding:10px 5px 10px 5px;
+}
+td.outline_col_0{
+	vertical-align:Middle;
+	text-align:Center;
+	border:Solid 1px #87CEEB;
+	background:#F5F5F5;
+	width:30px;
+	font-size:130%;
+}
+td.outline_col_0 div.h6{
+	color:#4682B4;
+	margin:0px;
+}
+td.outline_col_1{
+	vertical-align:Middle;
+	border:Solid 1px #87CEEB;
+	border-left:None;
+	background:#F5F5F5;
+	width:150px;
+}
+td.outline_col_1 div.h6{
+	margin:0px;
+	color:#000000;
+}
+td.outline_col_2{
+	vertical-align:Middle;
+	background:#FFFFFF;
+	border:Solid 1px #87CEEB;
+	padding:3px 3px 3px 10px;
+}
+td.outline_col_2 div.list{
+	background:Transparent;
+	_background:Transparent;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.table_ui{
+	margin:5px 10px 10px 30px;
+}
+table.table_ui{
+	table-layout:Auto;
+	border-collapse:Collapse;
+	border:None;
+	border-bottom:Solid 1px #E0E0E0;
+}
+td.table_ui_col_0{
+	padding:0px;
+	vertical-align:Top;
+	font-size:100%;
+	width:150px;
+	color:#000000;
+	padding:0px 0px 5px 0px;
+	border-right:None;
+}
+td.table_ui_col_1{
+	background:#FFFFFF;
+	padding:3px;
+	padding-left:10px;
+	border:Solid 1px #E0E0E0;
+	border-left:Solid 1px #E0E0E0;
+	border-right:None;
+	border-bottom:None;
+	vertical-align:Top;
+}
+td.table_ui_col_0 div.ui_level0{
+	background:#FFFFFF;
+	font-size:80%;
+	padding:6px 3px 1px 3px;
+	border-top:Solid 1px #E0E0E0;
+	border-right:None;
+	border-left:Solid 10px #FFFFFF;
+	margin-left:0px;
+}
+td.table_ui_col_0 div.ui_level1{
+	background:#FFFFFF;
+	font-size:80%;
+	padding:6px 3px 10px 3px;
+	border-top:Solid 1px #E0E0E0;
+	border-right:None;
+	border-left:Solid 10px #87BEDB;
+	margin-left:0px;
+}
+td.table_ui_col_0 div.ui_level2{
+	background:#FFFFFF;
+	font-size:80%;
+	padding:6px 3px 10px 3px;
+	margin-left:10px;
+	border-top:Solid 1px #E0E0E0;
+	border-right:None;
+	border-left:Solid 10px #A0D0EA;
+}
+td.table_ui_col_0 div.ui_level3{
+	background:#FFFFFF;
+	font-size:80%;
+	padding:6px 3px 10px 3px;
+	margin-left:20px;
+	border-top:Solid 1px #E0E0E0;
+	border-right:None;
+	border-left:Solid 10px #C6E5F6;
+}
+td.table_ui_col_0 div.ui_level1 img,
+td.table_ui_col_0 div.ui_level2 img,
+td.table_ui_col_0 div.ui_level3 img{
+	vertical-align:Middle;
+}
+/*-----------------------------------------------------------------------------------------------*/
+table div.table_important,
+table div.table_caution,
+table div.table_warning,
+table div.table_note{
+	margin-left:20px;
+}
+div.table_important,
+div.table_caution,
+div.table_warning,
+div.table_note{
+	margin:10px 10px 10px 30px;
+}
+*:first-child+html table.table_important,
+*:first-child+html table.table_caution,
+*:first-child+html table.table_warning,
+*:first-child+html table.table_note{
+	width:Auto;
+	table-layout:Fixed;
+}
+table.table_important,
+table.table_caution,
+table.table_warning,
+table.table_note{
+	background:#FFFFFF;
+	border-collapse:Collapse;
+	font-size:100%;
+	width:100%;
+	_width:Auto;
+	_table-layout:Fixed;
+}
+*:first-child+html table td.table_important_col_0,
+*:first-child+html table td.table_caution_col_0,
+*:first-child+html table td.table_warning_col_0,
+*:first-child+html table td.table_note_col_0{
+	width:Auto;
+}
+table td.table_important_col_0,
+table td.table_caution_col_0,
+table td.table_warning_col_0,
+table td.table_note_col_0{
+	width:100%;
+	_width:Auto;
+	vertical-align:Top;
+}
+*:first-child+html tbody.table_important td.table_important_col_0,
+*:first-child+html tbody.table_caution td.table_caution_col_0,
+*:first-child+html tbody.table_warning td.table_warning_col_0,
+*:first-child+html tbody.table_note td.table_note_col_0{
+	width:Auto;
+}
+tbody.table_important td.table_important_col_0,
+tbody.table_caution td.table_caution_col_0,
+tbody.table_warning td.table_warning_col_0,
+tbody.table_note td.table_note_col_0{
+	padding-left:10px;
+	width:100%;
+	_width:Auto;
+}
+@media print{
+thead.table_important td.table_important,
+thead.table_caution td.table_caution,
+thead.table_warning td.table_warning,
+thead.table_note td.table_note{
+	padding-bottom:5px;
+}}
+tbody.table_important td.table_important,
+tbody.table_caution td.table_caution,
+tbody.table_warning td.table_warning,
+tbody.table_note td.table_note{
+	padding-left:10px;
+	padding-top:2px;
+	border-bottom:None;
+	padding-bottom:5px;
+	border-top:None;
+}
+thead.table_important td.table_important_col_0,
+thead.table_note td.table_note_col_0{
+	padding:2px 5px 2px 30px;
+	text-align:Left;
+	border-bottom:None;
+}
+thead.table_caution td.table_caution_col_0,
+thead.table_warning td.table_warning_col_0{
+	padding:2px 23px 5px 5px;
+	text-align:Center;
+	border-bottom:Solid 1px #808080;
+}
+thead.table_caution td.table_caution_col_0 div img,
+thead.table_warning td.table_warning_col_0 div img{
+	margin-right:3px;
+}
+thead.table_important td.table_important div,
+thead.table_caution td.table_caution div,
+thead.table_warning td.table_warning div,
+thead.table_note td.table_note div{
+	font-weight:Bold;
+}
+table.table_important{
+	border:Solid 1px #808080;
+}
+table.table_caution,
+table.table_warning{
+	border:Solid 1px #808080;
+}
+table.table_note{
+	border:Solid 1px #808080;
+}
+thead.table_important td.table_important{
+	background:Transparent;
+	_background:Transparent;
+}
+thead.table_caution td.table_caution div,
+thead.table_warning td.table_warning div{
+	font-size:120%;
+}
+
+thead.table_note td.table_note{
+	background:Transparent;
+	_background:Transparent;
+}
+thead.table_important td.table_important div{
+	color:#4682B4;
+}
+thead.table_caution td.table_caution div,
+thead.table_warning td.table_warning div{
+	color:#000000;
+}
+thead.table_note td.table_note div{
+	color:#808080;
+}
+thead.table_important td.table_important_col_0,
+tbody.table_important td.table_important_col_0{
+	border-right:Solid 1px #808080;
+}
+thead.table_caution td.table_caution_col_0,
+tbody.table_caution td.table_caution_col_0,
+thead.table_warning td.table_warning_col_0,
+tbody.table_warning td.table_warning_col_0{
+	border-right:Solid 1px #808080;
+}
+thead.table_note td.table_note_col_0,
+tbody.table_note td.table_note_col_0{
+	border-right:Solid 1px #808080;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.table_no_border{
+	margin:10px 10px 10px 30px;	
+}
+table div.table_no_border{
+	margin-left:10px;
+}
+table.table_no_border{
+	border:None;
+	width:Auto;
+}
+thead.table_no_border td.table_no_border{
+	padding:0px 5px 0px 0px;
+	border:None;
+	font-size:100%;
+	text-align:Left;
+	font-weight:Bold;
+	vertical-align:Middle;
+}
+tbody.table_no_border td.table_no_border{
+	padding:0px 5px 0px 0px;
+	vertical-align:Top;
+	border:None;
+	font-size:100%;
+	padding-bottom:5px;
+}
+tbody.table_no_border td.table_no_border div{
+	margin-top:0px;
+	margin-bottom:0px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.table_matrix{
+	margin:10px 10px 10px 30px;
+}
+table div.table_matrix{
+	margin-left:20px;
+}
+table.table_matrix{
+	border-collapse:Collapse;
+	border:Solid 1px #808080;
+}
+thead.table_matrix td.table_matrix{
+	padding:5px;
+	background-color:#DDDDDD;
+	border:Solid 1px #808080;
+	font-size:100%;
+	text-align:Center;
+	font-weight:Normal;
+	vertical-align:Middle;
+}
+tbody.table_matrix td.table_matrix_col_0{
+	padding:5px 0px;
+	padding-left:5px;
+	width:120px;
+	vertical-align:Middle;
+	background-color:#EFEFEF;
+	border:Solid 1px #808080;
+	font-size:100%;
+	font-weight:Normal;
+}
+tbody.table_matrix td.table_matrix{
+	padding:3px 10px;
+	vertical-align:Middle;
+	border:Solid 1px #808080;
+	font-size:100%;
+}
+thead.table_matrix td.table_matrix_col_1{
+	background-color:#DDDDDD;
+	border:Solid 1px #808080;
+	padding:5px;
+}
+tbody.table_matrix td.table_matrix_col_1{
+	vertical-align:Middle;
+	border:Solid 1px #808080;
+}
+thead.table_matrix td.table_matrix_col_0{
+	border:Solid 1px #808080;
+	background-color:#DDDDDD;
+	padding:5px;
+}
+thead.table_matrix td.table_matrix div{
+	color:#000000;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.table_general{
+	margin:10px 10px 10px 30px;
+}
+table div.table_general{
+	margin-left:20px;
+}
+table.table_general{
+	border-collapse:Collapse;
+	border:Solid 1px #808080;
+}
+thead.table_general td.table_general{
+	padding:5px;
+	border:Solid 1px #808080;
+	font-size:100%;
+	text-align:Center;
+	font-weight:Normal;
+	vertical-align:Middle;
+}
+tbody.table_general td.table_general_col_0{
+	padding:5px 0px;
+	padding-left:5px;
+	width:120px;
+	vertical-align:Middle;
+	border:Solid 1px #808080;
+	font-size:100%;
+	font-weight:Normal;
+}
+tbody.table_general td.table_general{
+	padding:3px 10px;
+	vertical-align:Middle;
+	border:Solid 1px #808080;
+	font-size:100%;
+}
+thead.table_general td.table_general_col_1{
+	border:Solid 1px #808080;
+	padding:5px;
+}
+tbody.table_general td.table_general_col_1{
+	vertical-align:Middle;
+	border:Solid 1px #808080;
+}
+thead.table_general td.table_general_col_0{
+	border:Solid 1px #808080;
+	padding:5px;
+}
+thead.table_general td.table_general div{
+	color:#000000;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.table_number{
+	margin:10px 10px 10px 35px;	
+}
+table div.table_number{
+	margin-left:25px;
+}
+table.table_number{
+	border-collapse:Collapse;
+	border:None;
+	width:Auto;
+}
+tbody.table_number td.table_number{
+	padding:0px 5px 0px 0px;
+	border:None;
+	font-size:100%;
+	text-align:Left;
+	vertical-align:Top;
+}
+tbody.table_number td.table_number_col_0{
+	width:1.5em;
+	border:None;
+}
+tbody.table_number td.table_number_col_0 div{
+	margin-left:0px;
+	margin-right:0px;
+	font-weight:Normal;
+	text-align:Right;
+}
+tbody.table_number td.table_number_col_1{
+	width:Auto;
+}
+/*-----------------------------------------------------------------------------------------------*/
+span.bold{
+	font-weight:Bold;
+}
+span.italic{
+	font-style:Italic;
+}
+span.no_break{
+	white-space:Nowrap;
+}
+span.superscript{
+	vertical-align:Super;
+	font-size:80%;
+}
+span.subscript{
+	vertical-align:Sub;
+	font-size:80%;
+}
+span.underline{
+	text-decoration:Underline;
+}
+span.color_white{
+	color:#FFFFFF;
+}
+span.color_blue{
+	color:#0000FF;
+}
+span.color_red{
+	color:#FF0000;
+}
+span.color_orange{
+	color:#FFA500;
+}
+span.color_green{
+	color:#008000;
+}
+span.bold\+color_red{
+	color:#FF0000;
+	font-weight:Bold;
+}
+span.bold\+italic{
+	font-style:Italic;
+	font-weight:Bold;
+}
+span.bold\+superscript{
+	vertical-align:Super;
+	font-size:80%;
+	font-weight:Bold;
+}
+span.bold\+underline{
+	text-decoration:Underline;
+	font-weight:Bold;
+}
+span.italic\+superscript{
+	vertical-align:Super;
+	font-size:80%;
+	font-style:Italic;
+}
+span.yenmark{
+	/*font-family:"MS PGothic","Osaka","Arial","Helvetica",Sans-serif;*/
+}
+span.yenmark\+italic{
+	/*font-family:"MS PGothic","Osaka","Arial","Helvetica",Sans-serif;*/
+	font-style:Italic;
+}
+span.bold\+color_orange{
+	color:#FFA500;
+	font-weight:Bold;
+}
+span.bold\+superscript\+color_red{
+	color:#FF0000;
+	vertical-align:Super;
+	font-size:80%;
+	font-weight:Bold;
+}
+span.bold\+superscript\+color_orange{
+	color:#FFA500;
+	vertical-align:Super;
+	font-size:80%;
+	font-weight:Bold;
+}
+span.bold\+no_break{
+	white-space:Nowrap;
+	font-weight:Bold;
+}
+span.bold\+no_break\+superscript{
+	white-space:Nowrap;
+	font-weight:Bold;
+	vertical-align:Super;
+	font-size:80%;
+}
+span.no_break\+superscript{
+	white-space:Nowrap;
+	vertical-align:Super;
+	font-size:80%;
+}
+span.superscript\+color_red{
+	color:#FF0000;
+	vertical-align:Super;
+	font-size:80%;
+}
+span.superscript\+color_orange{
+	color:#FFA500;
+	vertical-align:Super;
+	font-size:80%;
+}
+span.ui_text{
+}
+span.ui_bold{
+	font-weight:Bold;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+div#id_breadcrumbs{
+	font-size:70%;
+	position:Absolute;
+	left:5px;
+	top:10px;
+	z-index:1;
+	cursor:Default;
+	display:None;
+}
+div#id_breadcrumbs a{
+	margin:0px 5px;
+}
+div#id_breadcrumbs a:link{
+	color:#0000FF;
+}
+div#id_breadcrumbs a:visited{
+	color:#0000FF;
+}
+span.style_name{
+	font:Normal 8pt "Tahoma";
+	color:#FF0000;
+	margin:0px 5px;
+}
+div.open_close_all{
+	font-size:80%;
+	margin:5px 10px 5px 30px;
+	color:#3366A5;
+	text-align:Right;
+}
+div.open_close_next_sibling{
+	font-size:80%;
+	margin:5px 10px 5px 30px;
+	color:#3366A5;
+	text-align:Right;
+}
+div#id_content div.open_close_all a:hover,
+div#id_content div.open_close_next_sibling a:hover{
+	text-decoration:None;
+}
+a.open_all:hover,
+a.close_all:hover,
+a.open_next_sibling:hover,
+a.close_next_sibling:hover{
+	border-bottom:Solid 1px #3366A5;
+}
+a.open_all,
+a.close_all,
+a.open_next_sibling,
+a.close_next_sibling{
+	border-bottom:Dotted 1px #3366A5;
+	padding-right:15px;
+}
+a.open_all{
+	margin-right:5px;
+}
+a.open_next_sibling{
+}
+a.close_all,
+a.close_next_sibling{
+}
+div.invisible_begin{
+	color:#FFFFFF;
+	font-size:80%;
+	text-align:Right;
+}
+div.invisible_end{
+	color:#FFFFFF;
+	font-size:80%;
+	text-align:Right;
+}
+div.invisible{
+	display:None;
+	border-right:Dotted 1px #808080;
+	margin-right:10px;
+}
+@media print{
+div.open_close_all{
+	display:None;
+}
+div.open_close_next_sibling{
+	display:None;
+}
+div.invisible{
+	display:Block;
+	border-right:None;
+	margin-right:0px;
+}}
+div.hr{
+	border-top:Solid 2px #808080;
+	margin:25px 10px 0px 10px;
+	font-size:0pt;
+	color:#FFFFFF;
+}
+hr{
+	color:#808080;
+	background-color:#808080;
+	margin:25px 10px 0px 10px;
+	height:2px;
+	border:0;
+}
+-->
+		</style>
+	</head>
+	<body>
+		<!--CONTENT_START-->
+		<div id="id_content">
+			<div class="h1"><a id="d3209d1e1265edc49d5d94202bdeb6ec"></a>Canon Generic PS3 Driver2 - Version 3.00 for Microsoft Windows</div>
+			<div class="text">This README file contains supplemental information to help you install and use your Generic PS3 Driver2 printer driver software with Microsoft Windows.</div>
+			<div class="text">As with most software and hardware products, some information is made available after the development of the manual. Updated information regarding this driver software is provided in this README file. If you require additional assistance, please contact your local Canon company.</div>
+			<div class="text">Windows and Windows Vista are either registered trademarks or trademarks of Microsoft Corporation in the United States and/or other countries.</div>
+			<div class="text">Other product and company names herein may be the trademarks of their respective owners.</div>
+			<div class="h2"><a id="0c970eb48f6aeb22f5fe56ddcefd64fa"></a>CONTENTS</div>
+			<div class="list_link"><a href="#636d58b85e05af14fba26f23ec13e2c6">Overview</a></div>
+			<div class="list_link"><a href="#cfbfe503012e612edb9d60eefc68d5af">System Requirements</a></div>
+			<div class="list_link"><a href="#ff162bfa526082b732442a0925874960">Installing the Printer Driver</a></div>
+			<div class="list_link"><a href="#b6b8cb34c536624321aae23eb2118d27">Accessing the Properties Dialog Box</a></div>
+			<div class="list_link"><a href="#a9472a69374d08acb201ac44575378ed">Accessing Help Information</a></div>
+			<div class="list_link"><a href="#74722ef065ccaf1fa5e99bf717f10223">Cautions, Limitations and Restrictions</a></div>
+			<div class="list_link"><a href="#4a6294933dafbd39e892b40798cb5ff6">Restrictions Regarding Device Settings</a></div>
+			<div class="list_link"><a href="#8eecccf65bbb3b8c3ff9bdbde5b13008">Restrictions When Using the Canon Driver Configuration Tool</a></div>
+			<div class="list_link"><a href="#4a6bdb2eb8fe4b63a3a88976d8016900">Limitations of Specific Printer Models</a></div>
+			<div class="h4"><a id="636d58b85e05af14fba26f23ec13e2c6"></a>Overview</div>
+			<div class="text">This printer driver allows you to print documents from any Windows application to your printer.</div>
+			<div class="h4"><a id="cfbfe503012e612edb9d60eefc68d5af"></a>System Requirements</div>
+			<div class="text">The Canon Generic PS3 Driver2 Printer Driver can be used in the following environments:</div>
+			<div class="h5">Operating Systems</div>
+			<div class="text">Windows Vista</div>
+			<div class="text">Windows 7</div>
+			<div class="text">Windows 8</div>
+			<div class="text">Windows 8.1</div>
+			<div class="text">Windows Server 2003</div>
+			<div class="text">Windows Server 2003 R2</div>
+			<div class="text">Windows Server 2008</div>
+			<div class="text">Windows Server 2008 R2</div>
+			<div class="text">Windows Server 2012</div>
+			<div class="text">Windows Server 2012 R2</div>
+			<div class="h5">Server-based Computing Environment</div>
+			<div class="h6">Server Operating Systems</div>
+			<div class="text">Windows Server 2008</div>
+			<div class="text">Windows Server 2008 R2</div>
+			<div class="text">Windows Server 2012</div>
+			<div class="text">Windows Server 2012 R2</div>
+			<div class="h6">Server Components</div>
+			<div class="text">Citrix Presentation Server 4.5</div>
+			<div class="text">Citrix XenApp 5.0</div>
+			<div class="text">Citrix XenApp 6.0</div>
+			<div class="text">Citrix XenApp 6.5</div>
+			<div class="text">Citrix XenApp 7.5</div>
+			<div class="text">Citrix XenApp 7.6</div>
+			<div class="text">Citrix XenDesktop 4.0</div>
+			<div class="text">Citrix XenDesktop 5.0</div>
+			<div class="text">Citrix XenDesktop 5.5</div>
+			<div class="text">Citrix XenDesktop 5.6</div>
+			<div class="text">Citrix XenDesktop 7.0</div>
+			<div class="text">Citrix XenDesktop 7.1</div>
+			<div class="text">Citrix XenDesktop 7.5</div>
+			<div class="text">Citrix XenDesktop 7.6</div>
+			<div class="h6">Cluster Server</div>
+			<div class="text">Microsoft Windows Server 2008 Enterprise/Datacenter Edition</div>
+			<div class="text">Microsoft Windows Server 2008 R2 Enterprise/Datacenter Edition</div>
+			<div class="text">Microsoft Windows Server 2012</div>
+			<div class="text">Microsoft Windows Server 2012 R2</div>
+			<div class="h5"><a id="46736b31e3ec30e521e36b46c58fa250"></a>Computer</div>
+			<div class="text">Any computer which runs the above operating system software properly.</div>
+			<div class="text">However, at least one of the following output ports is required:</div>
+			<div class="text_level1">- network interface</div>
+			<div class="text">The network interface is recommended for the highest quality printing throughput.</div>
+			<div class="h4"><a id="ff162bfa526082b732442a0925874960"></a>Installing the Printer Driver</div>
+			<div class="text">To use this printer driver with software applications that operate with Microsoft Windows, use the following installation procedure.</div>
+			<div class="h6"><a id="2a30113ec12409ecaf1debadd080adee"></a><span class="bold">NOTE</span></div>
+			<div class="list">Before installation, log into Windows as an Administrator.</div>
+			<div class="list">If a message prompting you to restart your computer is displayed when using the installer, make sure to restart your computer. If you do not restart your computer, existing drivers may not operate correctly.</div>
+			<div class="list">If you are using the printer auto-creation mechanism in a Citrix XenApp (Presentation Server) environment, you may not be able to correctly install this driver using the Installer. If so, restart the XenApp Server PC and check the Printers folder. If any existing printer icons are no longer displayed, re-install the relevant printer drivers in the XenApp Server PC using the Add Printer Wizard in the Printers folder.<br />Then, before starting the Installer to install this driver, disconnect all client printers from all the ICA sessions by using the ICA Client Printer Configuration utility. After installing the driver, restart the ICA Client Printer Configuration utility and reconnect the printers. </div>
+			<div class="list">It is recommended to use the installer for upgrading or adding printer drivers. If you install a new printer driver using the Add Printer Wizard, you must upgrade all existing printer drivers by clicking the New Driver button in the Printer properties dialog box.</div>
+			<div class="list">If you use a SMB (NetBIOS network) printer as a shared printer on the server PC, use the Add Printer Wizard, and select &quot;Network printer&quot; when installing the printer driver.</div>
+			<div class="h5"><a id="6651e2a85f87a56b7c2604df4c48b1fa"></a>To install using the Installer:</div>
+			<div class="text">1. Start the installer.</div>
+			<div class="text_level1">Double-click the [Setup.exe] file in the appropriate folder.</div>
+			<div class="text">2. The Wizard is displayed. Select the language of the installer from [Language] and click [Next]. The language of the driver to be installed is also set according to this setting.</div>
+			<div class="text">3. The user license agreement is displayed on the screen. Confirm the content of the license agreement, then click [Yes]. </div>
+			<div class="text">4. If the dialog box to select how to execute the setup is displayed, select [Add New Printers], or [Add New Printers and Update Existing Printer Drivers] and click the [Next] button. </div>
+			<div class="text">5. Select a [Port] from drop-down menu or by clicking the [Add Port] button. Then click the [Next] button.</div>
+			<div class="text">6. In the next dialog box, check the installation settings, and then click the [Start] button. </div>
+			<div class="text">7. Click the [Exit] button to finish the installation program. </div>
+			<div class="text_level1">You are now ready to print from any Windows software application.</div>
+			<div class="h6"><a id="ff9115cb2003a1c9edb2ef3aa10b883a"></a><span class="bold">NOTE</span></div>
+			<div class="list">You can add a new driver without affecting existing driver if you select [Add New Printers] for step 4 If you select [Add New Printers and Update Existing Printer Drivers], all existing drivers are updated automatically when you add a new driver.</div>
+			<div class="list">If you are using a shared printer in the Print Server (Point and Print) environment, it is necessary to install Canon Driver Information Assist Service in the server PC in order to set up the printer configuration automatically or to use the Department ID Management feature.</div>
+			<div class="list">If you are using an operating system equipped with Windows Firewall, a message which asks if you want to change the Windows Firewall setting is displayed during the installation.</div>
+			<div class="dash">If you select [Yes], Windows Firewall will be configured to unblock the connection for Canon Driver Information Assist Service, so that you can set up the printer configuration automatically or use the Department ID Management feature.</div>
+			<div class="dash">If you select [No], you cannot use Canon Driver Information Assist Service. </div>
+			<div class="h5"><a id="458c0fbe1c62532bfa546e541b069a2e"></a>To install using the Add Printer Wizard:</div>
+			<div class="text">1. Display the Printers folder.</div>
+			<div class="dash">If you are using Windows Server 2003/2003 R2, on the [Start] menu, click [Printers and Faxes].</div>
+			<div class="dash">If you are using Windows Vista/Server 2008, on the [Start] menu, click [Control Panel], and then [Printers].</div>
+			<div class="dash">If you are using Windows 7/Server 2008 R2, on the [Start] menu, click [Devices and Printers].</div>
+			<div class="dash">If you are using Windows 8/8.1/Server 2012/2012 R2, from the desktop, display the charm bar to the right of the screen, and click or tap [Settings], [Control Panel], and then [Devices and Printers].<br /></div>
+			<div class="text">2.In the [Printers] folder, double-click the [Add Printer] icon or click [Add] a printer to start the Add Printer Wizard. </div>
+			<div class="text">3.Confirm the Wizard is started, and then click the [Next] button. </div>
+			<div class="text">4. Follow the instructions on the screen to continue with the installation. </div>
+			<div class="text">5.Click the [Have Disk] button. </div>
+			<div class="text">6.Click the [Browse] button to select the &quot;.inf&quot; file, and then click the [OK] button.</div>
+			<div class="text_level2">32bit version:</div>
+			<div class="text_level2">\PS\32BIT\Driver</div>
+			<div class="text_level2">64bit version:</div>
+			<div class="text_level2">\PS\x64\Driver</div>
+			<div class="annotation">* The path may differ from those described above, depending on the driver you are using. </div>
+			<div class="text">7.Select your printer model from [Printers], and then click the [Next] button. </div>
+			<div class="text">8.Follow the instructions on the screen to continue, and then click the [Finish] button to start copying the files. </div>
+			<div class="text_level1">You are now ready to print from any Windows software application.</div>
+			<div class="text"></div>
+			<div class="h4"><a id="b6b8cb34c536624321aae23eb2118d27"></a>Accessing the Properties Dialog Box</div>
+			<div class="text">The Properties dialog box contains several sheets that allow you to setup and control your printer. To access the Properties dialog box, use one of the following procedures:</div>
+			<div class="h6"><a id="8d941cd856e7fe97b977d837c0ab6ec3"></a>To access from the Desktop:</div>
+			<div class="text">1.Display the Printers folder.</div>
+			<div class="dash">If you are using Windows Server 2003/2003 R2, on the [Start] menu, click [Printers and Faxes].</div>
+			<div class="dash">If you are using Windows Vista/Server 2008, on the [Start] menu, click [Control Panel], and then [Printers].</div>
+			<div class="dash">If you are using Windows 7/Server 2008 R2, on the [Start] menu, click [Devices and Printers].</div>
+			<div class="dash">If you are using Windows 8/8.1/Server 2012/2012 R2, from the desktop, display the charm bar to the right of the screen, and click or tap Settings, Control Panel, and then Devices and Printers.<br /></div>
+			<div class="text">2.Right-click the printer icon for your printer in the Printers folder, and then click [Properties] (Windows Vista/Server 2003/2003 R2/2008) or [Printer properties] (Windows 7/8/8.1/Server 2008 R2/2012/2012 R2) to open the [Printer properties] dialog box, or click [Printing Preferences] to open the [Document Properties] dialog box (or [Printing Preferences] dialog box).</div>
+			<div class="h6"><a id="6367ad8a20cbc51529545a70e48a29c4"></a>To access from within an application:</div>
+			<div class="text">1.Click the [Print] command to display the [Print] dialog box. </div>
+			<div class="text">2.Select your printer name from the drop-down list box, and then click the [Properties] button. </div>
+			<div class="h4"><a id="a9472a69374d08acb201ac44575378ed"></a>Accessing Help Information</div>
+			<div class="text">From the Properties dialog box, you can click the [Help] button to display the information about the printer driver.</div>
+			<div class="h4"><a id="74722ef065ccaf1fa5e99bf717f10223"></a>Cautions, Limitations and Restrictions</div>
+			<div class="list">If you print a document that has an odd number of pages as a two-sided document from an application, the application may automatically insert a blank page to bring the number of pages up to an even number. When this happens, the blank page inserted by the application is counted up in the same way as a printed page. </div>
+			<div class="list">To register the custom paper size you want to use, access the [Document Properties] dialog box from the Printers folder with Administrator privileges, and then specify the paper size in the [Custom Paper Size Settings] dialog box which is displayed by clicking the [Custom Paper Size] button in the [Page Setup] tab. </div>
+			<div class="list">If you change the printer name in the [Devices and Printers] folder ([Printers and Faxes] folder in Windows Server 2003, [Printers] folder in Windows Vista), some profile settings registered in the printer driver (profiles added from the document properties) will be deleted. Before changing the printer name, save the profile settings as a file, and import the saved file after changing the printer name.</div>
+			<div class="list">If you are using Server Core in your Windows Server operating system, you cannot use the printer driver installer. Use the installation function of the operating system to install the printer driver.</div>
+			<div class="dash">You cannot install the driver with the installer. Use the installation options of Windows.</div>
+			<div class="dash">Some print options are not available under local environment or Windows Remote Desktop environment. </div>
+			<div class="list">If you are using a printer that supports 2-sided printing, the default setting is 2-sided printing. </div>
+			<div class="list">Black-and-white pages may be counted as color pages, depending on data, application, or driver settings when you select [Auto [Color/B&amp;W]] for [Color Mode] in the [Basic Settings]/[Quality] sheet. If you want to print a document as a black-and-white job, select [Black and White] for [Color Mode].</div>
+			<div class="list">If you use this printer driver in a server based computing environment, you cannot use the printer driver on client computers using unsupported operating systems.</div>
+			<div class="list">The custom paper sizes that can be set for the functions in [Device Settings] tab - [Finishing Settings] (2-sided printing, stapling, etc.) vary between printers. For details, refer to the manual supplied with the printer.</div>
+			<div class="list">Depending on the environment you are using, the names in [Profile] and of custom paper sizes may be unintelligible. If this happens, install the appropriate language pack.</div>
+			<div class="list">Depending on the printer you are using, unusable functions may be retrieved by [Device Settings] tab - [Retrieve Device Status Information].</div>
+			<div class="list">In some languages, the job name, user name, stored data name, etc. are not displayed correctly at the printer. In such cases, the characters strings you want to display can be displayed correctly by changing the display language of the printer to match the language of these character strings.</div>
+			<div class="list">When you print with a Canon LBP printer, if [Canon Device Mode] is [Off], the print job name and user name may be displayed as &quot;--&quot; on the control panel of the printer.</div>
+			<div class="list">When you print with a Canon LBP printer, if [Canon Device Mode] is [Off], even if you set [Secure Print], documents may be printed without [PIN] authentication.</div>
+			<div class="list">If you set the following and print more than one set of copies, only one set may be printed if you enter the [PIN] set for [Secure Print] once.</div>
+			<div class="dash">[Device Settings] - [Detailed Settings] - [Finishing] - [Collate [By Device]] - [Off]</div>
+			<div class="dash">[Finishing] - [Collate]</div>
+			<div class="dash">[Output Method] - [Secure Print]</div>
+			<div class="text_level2">To print all of the sets when this happens, you must enter the [PIN] the number of times corresponding to the number of sets you are printing. If you specify [Off] for [PS Output from Application], you can print all of the sets by entering the [PIN] once.</div>
+			<div class="list">If you set the following and print more than one set of copies, the print job may be stored with the number of sets specified at the printer and the respective number of sets may become 1.</div>
+			<div class="dash">[Device Settings] - [Detailed Settings] - [Finishing] - [Collate [By Device]] - [Off]</div>
+			<div class="dash">[Finishing] - [Collate]</div>
+			<div class="dash">[Output Method] - [Store]</div>
+			<div class="text_level2">If you specify [Off] for [PS Output from Application], this phenomenon may disappear.</div>
+			<div class="h4"><a id="4a6294933dafbd39e892b40798cb5ff6"></a>Restrictions Regarding Device Settings</div>
+			<div class="list">To use this printer, you must first set the type of printer you are using and the options installed in the printer in the [Device Settings] tab of the printer properties dialog box. If you select functions in the printer driver that are not available for the printer you are using, it may result in unintended print results.</div>
+			<div class="dash">If you set a paper source that is not installed in the printer, paper will be supplied from the printer's priority paper source.</div>
+			<div class="dash">If the paper source you have specified and the paper size do not match, an error will occur.</div>
+			<div class="dash">If you specify 2-sided printing for a printer that does not support 2-sided printing, the document will print on one side of the paper.</div>
+			<div class="dash">If you specify stapling for a printer that does not support stapling, the document will be printed unstapled.</div>
+			<div class="dash">If you specify saddle stitching for a printer that does not support saddle stitching, the document will be printed without saddle stitching.</div>
+			<div class="dash">If you select [Output Method] - [Store] when printing from a printer that does not support mail box storage, the document will be printed normally. If an error is displayed on the touch panel display of the printer and the printer goes offline, the document is printed when the printer goes online again.</div>
+			<div class="dash">If you specify department ID management for a printer that does not have department ID management, an error will occur.</div>
+			<div class="list">Depending on the printer you are using, in the following cases printing may take longer than usual.</div>
+			<div class="dash">If you specify portrait orientation when printing from an A4 (landscape) paper source.</div>
+			<div class="dash">If you specify landscape orientation when printing from an A4R (portrait) paper source.</div>
+			<div class="dash">If you specify landscape orientation for A3 paper.</div>
+			<div class="list">If you specify color printing for a black and white printer, the document will be output in black and white, but the print quality may deteriorate and printing may take some time.</div>
+			<div class="list">If functions that are not supported by this printer driver are set on the control panel of the printer you are using, the printer settings are enabled when printing. For example, if the function for inserting a sheet of paper between transparencies is enabled at the printer, a sheet of paper is inserted between each two transparencies when printing, and if the copy set numbering function has been enabled at the printer, the document will be printed with copy set numbering.</div>
+			<div class="list">If you click [Retrieve Device Status Information] in the [Device Settings] tab, the configuration information of the device is acquired and many of the settings in the [Device Settings] tab are automatically configured. However, some of the settings in the [Detailed Settings] dialog box must be set manually. It is recommended that you configure the settings by using [Retrieve Device Status Information], then subsequently set the items that need to be set manually.<br /></div>
+			<div class="h4"><a id="8eecccf65bbb3b8c3ff9bdbde5b13008"></a>Restrictions When Using the Canon Driver Configuration Tool</div>
+			<div class="list">The items that can be set in each of the tabs in [Printing Preferences] depend on the settings in the [Device Settings] tab. If you customize the driver using the Canon Driver Configuration Tool, set each tab in the [Printing Preferences] dialog box after setting the [Device Settings] tab.</div>
+			<div class="h4"><a id="4a6bdb2eb8fe4b63a3a88976d8016900"></a>Limitations of Specific Printer Models</div>
+			<div class="list">When saving print data in an inbox in some iR series printers, the print style (one-sided printing/two-sided printing) setting, paper source setting, and some page layout and scaling settings etc. will not be displayed correctly on the printer's control panel. However, printing will be executed as set.</div>
+			<div class="list">In some iR series printers, if you specify in the control panel of the printer the staple position for landscape print data saved in an inbox, a different position may be stapled to the actual vertical orientation of the print result.</div>
+			<div class="list">In some iR series printers, if stapling cannot be performed at the specified stapling position the document is output without being stapled.</div>
+			<hr />
+			<div class="text_right">Copyright Canon Inc. 2012</div>
+			<div class="text"></div>
+		</div>
+		<!--CONTENT_END-->
+	</body>
+</html>
