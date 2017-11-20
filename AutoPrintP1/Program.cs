@@ -69,7 +69,7 @@ namespace AutoPrintP1
                     pDism1.Start();
                     pDism1.WaitForExit();
                     Console.WriteLine(pDism1.StandardOutput.ReadToEnd());//operation
-                    Console.ReadKey();
+                    
                     //output stream
 
 
@@ -80,18 +80,26 @@ namespace AutoPrintP1
                     pCmd1.StartInfo.FileName = "pnputil.exe";
                     pCmd1.StartInfo.Arguments = "-i -a \"" + pInstallx64 + "\"";
                     pCmd1.StartInfo.CreateNoWindow = true;
+                    pCmd1.StartInfo.UseShellExecute = false;
+                    pCmd1.StartInfo.RedirectStandardOutput = true;
                     pCmd1.StartInfo.WindowStyle = ProcessWindowStyle.Minimized;
                     pCmd1.Start();
                     pCmd1.WaitForExit();
+                    Console.WriteLine(pCmd1.StandardOutput.ReadToEnd());//operation
+                    
                     
                     
 
                     //////////////Create LPR Port//////////////////
                     pNet1.StartInfo.FileName = "net.exe";
                     pNet1.StartInfo.Arguments = "stop spooler";
+                    pNet1.StartInfo.UseShellExecute = false;
+                    pNet1.StartInfo.RedirectStandardOutput = true;
                     pNet1.StartInfo.WindowStyle = ProcessWindowStyle.Minimized;
                     pNet1.Start();
                     pNet1.WaitForExit();
+                    Console.WriteLine(pNet1.StandardOutput.ReadToEnd());//operation
+                    
                    
                     //Create registry key
                     ////////////Add BnWPort////////////
@@ -133,9 +141,13 @@ namespace AutoPrintP1
 
                     pNet2.StartInfo.FileName = "net.exe";
                     pNet2.StartInfo.Arguments = "start spooler";
+                    pNet2.StartInfo.UseShellExecute = false;
+                    pNet2.StartInfo.RedirectStandardOutput = true;
                     pNet2.StartInfo.WindowStyle = ProcessWindowStyle.Minimized;
                     pNet2.Start();
                     pNet2.WaitForExit();
+                    Console.WriteLine(pNet2.StandardOutput.ReadToEnd());//operation
+                    
 
 
 
@@ -171,9 +183,13 @@ namespace AutoPrintP1
 
                     pNet1.StartInfo.FileName = "net.exe";
                     pNet1.StartInfo.Arguments = "stop spooler";
+                    pNet1.StartInfo.UseShellExecute = false;
+                    pNet1.StartInfo.RedirectStandardOutput = true;
                     pNet1.StartInfo.WindowStyle = ProcessWindowStyle.Minimized;
                     pNet1.Start();
                     pNet1.WaitForExit();
+                    Console.WriteLine(pNet1.StandardOutput.ReadToEnd());//operation
+                    
 
                     ////////////////////Configure_B&W_Printer//////////////
                     
@@ -181,9 +197,13 @@ namespace AutoPrintP1
                     {
                         pReg1.StartInfo.FileName = "cmd.exe";
                         pReg1.StartInfo.Arguments = "/c reg import " + pConfigx64BnW + "";
+                        pReg1.StartInfo.UseShellExecute = false;
+                        pReg1.StartInfo.RedirectStandardOutput = true;
                         pReg1.StartInfo.WindowStyle = ProcessWindowStyle.Minimized;
                         pReg1.Start();
                         pReg1.WaitForExit();
+                        Console.WriteLine(pReg1.StandardOutput.ReadToEnd());//operation
+                        
                     }
                     
                     //////////////////Configure_Color_Printer///////////////
@@ -192,23 +212,35 @@ namespace AutoPrintP1
                     {
                         pReg2.StartInfo.FileName = "cmd.exe";
                         pReg2.StartInfo.Arguments = "/c reg import " + pConfigx64Color + "";
+                        pReg2.StartInfo.UseShellExecute = false;
+                        pReg2.StartInfo.RedirectStandardOutput = true;
                         pReg2.StartInfo.WindowStyle = ProcessWindowStyle.Minimized;
                         pReg2.Start();
                         pReg2.WaitForExit();
+                        Console.WriteLine(pReg2.StandardOutput.ReadToEnd());//operation
+                        
                     }
                     
                     
 
                     pNet2.StartInfo.FileName = "net.exe";
                     pNet2.StartInfo.Arguments = "start spooler";
+                    pNet2.StartInfo.UseShellExecute = false;
+                    pNet2.StartInfo.RedirectStandardOutput = true;
                     pNet2.StartInfo.WindowStyle = ProcessWindowStyle.Minimized;
                     pNet2.Start();
                     pNet2.WaitForExit();
+                    Console.WriteLine(pNet2.StandardOutput.ReadToEnd());//operation
+                    
 
                     pMsi1.StartInfo.FileName = "Msiexec";
                     pMsi1.StartInfo.Arguments = "/i \"" + home + "PrinterInstall\\x64\\CanonPrintClient.msi\" /passive";
+                    pMsi1.StartInfo.UseShellExecute = false;
+                    pMsi1.StartInfo.RedirectStandardOutput = true;
                     pMsi1.Start();
                     pMsi1.WaitForExit();
+                    Console.WriteLine(pMsi1.StandardOutput.ReadToEnd());//operation
+                    
 
                     pMomClient.StartInfo.FileName = "momclnt.exe";
                     pMomClient.Start();
