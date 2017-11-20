@@ -1,0 +1,1286 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml" xmlns:hta="urn:HTMLApplication">
+	<head>
+		<meta name="Generator" content="CAESAR" />
+		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
+		<title>Canon Generic PS3 Driver2 - Version 3.00 for Microsoft Windows</title>
+		<hta:application id="id_canon_main_window" applicationname="canon_main_window" border="thick" borderstyle="normal" caption="yes" maximizebutton="yes" minimizebutton="yes" showintaskbar="yes" singleinstance="no" sysmenu="yes" version="1.0" windowstate="normal" contextmenu="yes" navigable="yes" />
+		<style type="text/css">div.list{display:list-item!important;list-style-type:Disc;margin-left:40px!important;padding-left:5px!important;}table div.list{margin-left:20px!important;padding-left:5px!important;}div.dash{display:list-item!important;list-style-type:Circle;margin-left:65px!important;padding-left:5px!important;}table div.dash{margin-left:40px!important;padding-left:5px!important;}div.step_sub{display:list-item!important;list-style-type:Square;margin-left:30px!important;padding-left:5px!important;}div.list_link{display:list-item!important;list-style-type:Square;margin-left:50px!important;padding-left:5px!important;}div.h1{background:#F3F8FA!important;}div.h2,div.h2_2line,div.h2_3line{background:#F3F8FA!important;}div.h3{background:#F3F8FA!important;}thead.table_important td.table_important_col_0,thead.table_note td.table_note_col_0{padding:2px 5px 2px 5px!important;}</style>
+		<style type="text/css" >
+			<!--
+*{
+	font-family:"MS PGothic","Osaka","Arial","Helvetica",Sans-serif;
+	/*margin:0;*/
+	/*padding:0;*/
+	/*border:0;*/
+	/*background-color:Transparent;*/
+	font-size:100%;
+	/*font-style:Normal;*/
+	text-decoration:None;
+}
+html{
+	border:0;
+}
+body{
+	margin:0;
+	padding:0;
+	background:#FFFFFF;
+}
+span{
+	color:Inherit;
+}
+div#id_content a{
+	text-decoration:None;
+}
+div#id_content a:link{
+	color:#3366A5;
+	text-decoration:None;
+}
+div#id_content a:visited{
+	color:#3366A5;
+	text-decoration:None;
+}
+div#id_content a:hover{
+	color:#EC6700;
+	background-color:#FFFFCC;
+	text-decoration:Underline;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.chapter_title{
+	background:#4682B4;
+	padding:2px 5px 2px 5px;
+	border-bottom:Solid 1px #4682B4;
+	font-weight:Bold;
+	font-size:80%;
+	margin-bottom:16px;
+	text-align:Right;
+	color:#FFFFFF;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.h1{
+	padding:32px 0 2px 8px;
+	border-bottom:Solid 1px #4682B4;
+	background:#F3F8FA;
+	font-weight:Bold;
+	font-size:120%;
+	margin-bottom:16px;
+	vertical-align:Bottom;
+	text-align:Left;
+	color:#000080;
+	position:Relative;
+}
+div.h1 a{
+	position:Absolute;
+	*position:Static!important;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.h2,
+div.h2_2line,
+div.h2_3line{
+	border:Solid 1px #4682B4;
+	padding:5px;
+	margin:30px 10px 5px 10px;
+	font-size:90%;
+	font-weight:Bold;
+	background:#F3F8FA;
+	color:#000080;
+}
+div.h2 a,
+div.h2_2line a,
+div.h2_3line a{
+	font-weight:Bold;
+	text-decoration:None;
+	color:#0000FF;
+}
+div.h2 img,
+div.h2_2line img,
+div.h2_3line img{
+	vertical-align:Middle;
+	margin-right:2px;
+	margin-left:0px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.h3{
+	padding:5px;
+	margin:25px 10px 5px 10px;
+	font-size:90%;
+	font-weight:Bold;
+	background:#F3F8FA;
+	border-bottom:Solid 1px #87CEEB;
+	color:#000080;
+}
+div.h3 a{
+	font-weight:Bold;
+	text-decoration:None;
+	color:#0000FF;
+}
+div.h3 img{
+	vertical-align:Middle;
+	margin-right:2px;
+	margin-left:0px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.h4{
+	margin:20px 10px 5px 10px;
+	font-weight:Bold;
+	font-size:90%;
+	border-Bottom:Solid 1px #87CEEB;
+	background:#FFFFFF;
+	padding:0px 5px;
+	color:#000080;
+}
+div.h4 img{
+	vertical-align:Middle;
+	margin-right:2px;
+	margin-left:0px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.h5{
+	margin:20px 10px 5px 15px;
+	font-weight:Bold;
+	font-size:80%;
+	color:#000080;
+}
+div.h5 img{
+	vertical-align:Middle;
+	margin-right:5px;
+	margin-left:4px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.h6{
+	margin:15px 10px 5px 30px;
+	font-weight:Bold;
+	font-size:80%;
+	color:#000080;
+}
+div.h6 img{
+	vertical-align:Middle;
+	margin-right:2px;
+	margin-left:0px;
+}
+table div.h6{
+	margin-left:0px;
+	margin-top:10px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.text{
+	font-size:80%;
+	margin:5px 10px 5px 30px;
+	color:#000000;
+}
+table div.text{
+	margin:3px 0 0 0;
+}
+div.text img{
+	vertical-align:Middle;
+}
+table div.text img{
+	vertical-align:Middle;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.text_level1{
+	font-size:80%;
+	margin:5px 10px 5px 40px;
+	color:#000000;
+}
+table div.text_level1{
+	margin:3px 0 0 10px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.text_level2{
+	font-size:80%;
+	margin:5px 10px 5px 50px;
+	color:#000000;
+}
+table div.text_level2{
+	margin:3px 0 0 20px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.text_level3{
+	font-size:80%;
+	margin:5px 10px 5px 60px;
+	color:#000000;
+}
+table div.text_level3{
+	margin:3px 0 0 30px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.text_center{
+	text-align:Center;
+	font-size:80%;
+	color:#000000;
+}
+table div.text_center{
+	margin:3px 0 0 0;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.text_right{
+	text-align:Right;
+	font-size:80%;
+	color:#000000;
+	margin-right:10px;
+}
+table div.text_right{
+	margin-right:0px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.annotation{
+	font-size:75%;
+	margin:0px 10px 5px 55px;
+	text-indent:-1.5em;
+	color:#000000;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.list{
+	background:Transparent;
+	_background:Transparent;
+	margin-left:30px;
+	margin-right:10px;
+	margin-top:2px;
+	margin-bottom:2px;
+	padding-left:20px;
+	padding-top:0px;
+	font-weight:Normal;
+	font-size:80%;
+	color:#000000;
+}
+table div.list{
+	margin-left:0px;
+}
+div.list img{
+	vertical-align:Top;
+}
+table div.list img{
+	vertical-align:Top;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+div.dash{
+	margin-left:50px;
+	margin-right:10px;
+	margin-top:2px;
+	margin-bottom:2px;
+	font-weight:Normal;
+	font-size:80%;
+	background:Transparent;
+	_background:Transparent;
+	padding:0px 0px 0px 20px;
+	color:#000000;
+}
+*:first-child+html div.dash{
+	background:Transparent;
+}
+table div.dash{
+	margin-left:12px;
+}
+div.dash img{
+	vertical-align:Top;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.example{
+	font-size:80%;
+	font-family:Monospace;
+	margin:5px 10px 5px 30px;
+	clear:Both;
+	background:#707080;
+	padding:5px;
+	color:#FFFFFF;
+}
+div#id_content div.example a:link{
+	color:#0000FF;
+	text-decoration:None;
+}
+div#id_content div.example a:visited{
+	color:#0000FF;
+	text-decoration:None;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.path{
+	padding:3px 10px 3px 20px;
+	font-size:80%;
+	margin:0px 30px;
+	background:Transparent;
+	_background:Transparent;
+	color:#666666;
+}
+div.path img{
+	vertical-align:Middle;
+}
+table div.path{
+	margin-left:0px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.step_number{
+	background:#F8F8F8;
+	font:Bold 200% "Arial";
+	color:#4682B4;
+	padding:0px 5px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:20px;
+	margin-bottom:0px;
+}
+div.step_number span{
+	font:Bold 100% "Arial";
+	color:#4682B4;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.step_path{
+	padding:3px 10px 3px 30px;
+	font-size:80%;
+	margin:0px 10px;
+	background:#F8F8F8;
+	_background:#F8F8F8;
+	color:#666666;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.step_text{
+	font-weight:Bold;
+	padding:0px 10px 15px 5px;
+	font-size:80%;
+	margin:0px 10px 10px 10px;
+	background:#F8F8F8;
+	color:#000000;
+}
+div.step_text img{
+	vertical-align:Middle;
+}
+@media print{div.step_text{
+	padding:0px 10px 20px 5px;
+}}
+/*-----------------------------------------------------------------------------------------------*/
+div.step_sub{
+	font-size:80%;
+	font-weight:Bold;
+	margin:10px 10px 5px 15px;
+	padding-left:15px;
+	background:Transparent;
+	_background:Transparent;
+	color:#000000;
+}
+div.step_sub img{
+	vertical-align:Top;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.figure{
+	text-align:Left;
+	margin-left:30px;
+	margin-bottom:10px;
+}
+table div.figure{
+	margin-left:0;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.link{
+	margin:10px;
+	font-size:80%;
+	color:#3366A5;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.link a{
+	text-decoration:None;
+	padding-left:10px;
+	background:Transparent;
+	_background:Transparent;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.list_link{
+	background:Transparent;
+	_background:Transparent;
+	margin-left:30px;
+	margin-right:10px;
+	margin-bottom:0px;
+	padding-left:20px;
+	padding-top:1px;
+	font-weight:Normal;
+	font-size:80%;
+	color:#3366A5;
+}
+table div.list_link{
+	margin-left:0px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.link_to_top{
+	text-align:Right;
+	padding:5px 10px 30px 10px;
+	font-size:80%;
+	color:#3366A5;
+	border-top:Dotted 1px #87CEEB;
+	margin-top:30px;
+}
+@media print{div.link_to_top{
+	display:None;
+}}
+div.link_to_top a{
+	text-decoration:None;
+	padding-left:12px;
+	background:Transparent;
+	_background:Transparent;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.trouble_shooting{
+	margin:10px 10px 10px 30px;
+}
+table.trouble_shooting{
+	border-collapse:Collapse;
+	table-layout:Fixed;
+}
+td.trouble_shooting{
+	border:Solid 1px #FFFFFF;
+}
+td.trouble_shooting_col_0{
+	padding:5px;
+	vertical-align:Middle;
+	font-size:100%;
+	width:80px;
+	background:#C0C0C0;
+	padding-bottom:10px;
+}
+td.trouble_shooting_col_1{
+	background:#EFEFEF;
+	padding-top:5px;
+	padding-bottom:10px;
+	padding-left:5px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.outline{
+	margin:10px 10px 10px 30px;
+}
+table.outline{
+	border-collapse:Collapse;
+	font-size:100%;
+}
+td.outline{
+	padding:10px 5px 10px 5px;
+}
+td.outline_col_0{
+	vertical-align:Middle;
+	text-align:Center;
+	border:Solid 1px #87CEEB;
+	background:#F5F5F5;
+	width:30px;
+	font-size:130%;
+}
+td.outline_col_0 div.h6{
+	color:#4682B4;
+	margin:0px;
+}
+td.outline_col_1{
+	vertical-align:Middle;
+	border:Solid 1px #87CEEB;
+	border-left:None;
+	background:#F5F5F5;
+	width:150px;
+}
+td.outline_col_1 div.h6{
+	margin:0px;
+	color:#000000;
+}
+td.outline_col_2{
+	vertical-align:Middle;
+	background:#FFFFFF;
+	border:Solid 1px #87CEEB;
+	padding:3px 3px 3px 10px;
+}
+td.outline_col_2 div.list{
+	background:Transparent;
+	_background:Transparent;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.table_ui{
+	margin:5px 10px 10px 30px;
+}
+table.table_ui{
+	table-layout:Auto;
+	border-collapse:Collapse;
+	border:None;
+	border-bottom:Solid 1px #E0E0E0;
+}
+td.table_ui_col_0{
+	padding:0px;
+	vertical-align:Top;
+	font-size:100%;
+	width:150px;
+	color:#000000;
+	padding:0px 0px 5px 0px;
+	border-right:None;
+}
+td.table_ui_col_1{
+	background:#FFFFFF;
+	padding:3px;
+	padding-left:10px;
+	border:Solid 1px #E0E0E0;
+	border-left:Solid 1px #E0E0E0;
+	border-right:None;
+	border-bottom:None;
+	vertical-align:Top;
+}
+td.table_ui_col_0 div.ui_level0{
+	background:#FFFFFF;
+	font-size:80%;
+	padding:6px 3px 1px 3px;
+	border-top:Solid 1px #E0E0E0;
+	border-right:None;
+	border-left:Solid 10px #FFFFFF;
+	margin-left:0px;
+}
+td.table_ui_col_0 div.ui_level1{
+	background:#FFFFFF;
+	font-size:80%;
+	padding:6px 3px 10px 3px;
+	border-top:Solid 1px #E0E0E0;
+	border-right:None;
+	border-left:Solid 10px #87BEDB;
+	margin-left:0px;
+}
+td.table_ui_col_0 div.ui_level2{
+	background:#FFFFFF;
+	font-size:80%;
+	padding:6px 3px 10px 3px;
+	margin-left:10px;
+	border-top:Solid 1px #E0E0E0;
+	border-right:None;
+	border-left:Solid 10px #A0D0EA;
+}
+td.table_ui_col_0 div.ui_level3{
+	background:#FFFFFF;
+	font-size:80%;
+	padding:6px 3px 10px 3px;
+	margin-left:20px;
+	border-top:Solid 1px #E0E0E0;
+	border-right:None;
+	border-left:Solid 10px #C6E5F6;
+}
+td.table_ui_col_0 div.ui_level1 img,
+td.table_ui_col_0 div.ui_level2 img,
+td.table_ui_col_0 div.ui_level3 img{
+	vertical-align:Middle;
+}
+/*-----------------------------------------------------------------------------------------------*/
+table div.table_important,
+table div.table_caution,
+table div.table_warning,
+table div.table_note{
+	margin-left:20px;
+}
+div.table_important,
+div.table_caution,
+div.table_warning,
+div.table_note{
+	margin:10px 10px 10px 30px;
+}
+*:first-child+html table.table_important,
+*:first-child+html table.table_caution,
+*:first-child+html table.table_warning,
+*:first-child+html table.table_note{
+	width:Auto;
+	table-layout:Fixed;
+}
+table.table_important,
+table.table_caution,
+table.table_warning,
+table.table_note{
+	background:#FFFFFF;
+	border-collapse:Collapse;
+	font-size:100%;
+	width:100%;
+	_width:Auto;
+	_table-layout:Fixed;
+}
+*:first-child+html table td.table_important_col_0,
+*:first-child+html table td.table_caution_col_0,
+*:first-child+html table td.table_warning_col_0,
+*:first-child+html table td.table_note_col_0{
+	width:Auto;
+}
+table td.table_important_col_0,
+table td.table_caution_col_0,
+table td.table_warning_col_0,
+table td.table_note_col_0{
+	width:100%;
+	_width:Auto;
+	vertical-align:Top;
+}
+*:first-child+html tbody.table_important td.table_important_col_0,
+*:first-child+html tbody.table_caution td.table_caution_col_0,
+*:first-child+html tbody.table_warning td.table_warning_col_0,
+*:first-child+html tbody.table_note td.table_note_col_0{
+	width:Auto;
+}
+tbody.table_important td.table_important_col_0,
+tbody.table_caution td.table_caution_col_0,
+tbody.table_warning td.table_warning_col_0,
+tbody.table_note td.table_note_col_0{
+	padding-left:10px;
+	width:100%;
+	_width:Auto;
+}
+@media print{
+thead.table_important td.table_important,
+thead.table_caution td.table_caution,
+thead.table_warning td.table_warning,
+thead.table_note td.table_note{
+	padding-bottom:5px;
+}}
+tbody.table_important td.table_important,
+tbody.table_caution td.table_caution,
+tbody.table_warning td.table_warning,
+tbody.table_note td.table_note{
+	padding-left:10px;
+	padding-top:2px;
+	border-bottom:None;
+	padding-bottom:5px;
+	border-top:None;
+}
+thead.table_important td.table_important_col_0,
+thead.table_note td.table_note_col_0{
+	padding:2px 5px 2px 30px;
+	text-align:Left;
+	border-bottom:None;
+}
+thead.table_caution td.table_caution_col_0,
+thead.table_warning td.table_warning_col_0{
+	padding:2px 23px 5px 5px;
+	text-align:Center;
+	border-bottom:Solid 1px #808080;
+}
+thead.table_caution td.table_caution_col_0 div img,
+thead.table_warning td.table_warning_col_0 div img{
+	margin-right:3px;
+}
+thead.table_important td.table_important div,
+thead.table_caution td.table_caution div,
+thead.table_warning td.table_warning div,
+thead.table_note td.table_note div{
+	font-weight:Bold;
+}
+table.table_important{
+	border:Solid 1px #808080;
+}
+table.table_caution,
+table.table_warning{
+	border:Solid 1px #808080;
+}
+table.table_note{
+	border:Solid 1px #808080;
+}
+thead.table_important td.table_important{
+	background:Transparent;
+	_background:Transparent;
+}
+thead.table_caution td.table_caution div,
+thead.table_warning td.table_warning div{
+	font-size:120%;
+}
+
+thead.table_note td.table_note{
+	background:Transparent;
+	_background:Transparent;
+}
+thead.table_important td.table_important div{
+	color:#4682B4;
+}
+thead.table_caution td.table_caution div,
+thead.table_warning td.table_warning div{
+	color:#000000;
+}
+thead.table_note td.table_note div{
+	color:#808080;
+}
+thead.table_important td.table_important_col_0,
+tbody.table_important td.table_important_col_0{
+	border-right:Solid 1px #808080;
+}
+thead.table_caution td.table_caution_col_0,
+tbody.table_caution td.table_caution_col_0,
+thead.table_warning td.table_warning_col_0,
+tbody.table_warning td.table_warning_col_0{
+	border-right:Solid 1px #808080;
+}
+thead.table_note td.table_note_col_0,
+tbody.table_note td.table_note_col_0{
+	border-right:Solid 1px #808080;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.table_no_border{
+	margin:10px 10px 10px 30px;	
+}
+table div.table_no_border{
+	margin-left:10px;
+}
+table.table_no_border{
+	border:None;
+	width:Auto;
+}
+thead.table_no_border td.table_no_border{
+	padding:0px 5px 0px 0px;
+	border:None;
+	font-size:100%;
+	text-align:Left;
+	font-weight:Bold;
+	vertical-align:Middle;
+}
+tbody.table_no_border td.table_no_border{
+	padding:0px 5px 0px 0px;
+	vertical-align:Top;
+	border:None;
+	font-size:100%;
+	padding-bottom:5px;
+}
+tbody.table_no_border td.table_no_border div{
+	margin-top:0px;
+	margin-bottom:0px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.table_matrix{
+	margin:10px 10px 10px 30px;
+}
+table div.table_matrix{
+	margin-left:20px;
+}
+table.table_matrix{
+	border-collapse:Collapse;
+	border:Solid 1px #808080;
+}
+thead.table_matrix td.table_matrix{
+	padding:5px;
+	background-color:#DDDDDD;
+	border:Solid 1px #808080;
+	font-size:100%;
+	text-align:Center;
+	font-weight:Normal;
+	vertical-align:Middle;
+}
+tbody.table_matrix td.table_matrix_col_0{
+	padding:5px 0px;
+	padding-left:5px;
+	width:120px;
+	vertical-align:Middle;
+	background-color:#EFEFEF;
+	border:Solid 1px #808080;
+	font-size:100%;
+	font-weight:Normal;
+}
+tbody.table_matrix td.table_matrix{
+	padding:3px 10px;
+	vertical-align:Middle;
+	border:Solid 1px #808080;
+	font-size:100%;
+}
+thead.table_matrix td.table_matrix_col_1{
+	background-color:#DDDDDD;
+	border:Solid 1px #808080;
+	padding:5px;
+}
+tbody.table_matrix td.table_matrix_col_1{
+	vertical-align:Middle;
+	border:Solid 1px #808080;
+}
+thead.table_matrix td.table_matrix_col_0{
+	border:Solid 1px #808080;
+	background-color:#DDDDDD;
+	padding:5px;
+}
+thead.table_matrix td.table_matrix div{
+	color:#000000;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.table_general{
+	margin:10px 10px 10px 30px;
+}
+table div.table_general{
+	margin-left:20px;
+}
+table.table_general{
+	border-collapse:Collapse;
+	border:Solid 1px #808080;
+}
+thead.table_general td.table_general{
+	padding:5px;
+	border:Solid 1px #808080;
+	font-size:100%;
+	text-align:Center;
+	font-weight:Normal;
+	vertical-align:Middle;
+}
+tbody.table_general td.table_general_col_0{
+	padding:5px 0px;
+	padding-left:5px;
+	width:120px;
+	vertical-align:Middle;
+	border:Solid 1px #808080;
+	font-size:100%;
+	font-weight:Normal;
+}
+tbody.table_general td.table_general{
+	padding:3px 10px;
+	vertical-align:Middle;
+	border:Solid 1px #808080;
+	font-size:100%;
+}
+thead.table_general td.table_general_col_1{
+	border:Solid 1px #808080;
+	padding:5px;
+}
+tbody.table_general td.table_general_col_1{
+	vertical-align:Middle;
+	border:Solid 1px #808080;
+}
+thead.table_general td.table_general_col_0{
+	border:Solid 1px #808080;
+	padding:5px;
+}
+thead.table_general td.table_general div{
+	color:#000000;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.table_number{
+	margin:10px 10px 10px 35px;	
+}
+table div.table_number{
+	margin-left:25px;
+}
+table.table_number{
+	border-collapse:Collapse;
+	border:None;
+	width:Auto;
+}
+tbody.table_number td.table_number{
+	padding:0px 5px 0px 0px;
+	border:None;
+	font-size:100%;
+	text-align:Left;
+	vertical-align:Top;
+}
+tbody.table_number td.table_number_col_0{
+	width:1.5em;
+	border:None;
+}
+tbody.table_number td.table_number_col_0 div{
+	margin-left:0px;
+	margin-right:0px;
+	font-weight:Normal;
+	text-align:Right;
+}
+tbody.table_number td.table_number_col_1{
+	width:Auto;
+}
+/*-----------------------------------------------------------------------------------------------*/
+span.bold{
+	font-weight:Bold;
+}
+span.italic{
+	font-style:Italic;
+}
+span.no_break{
+	white-space:Nowrap;
+}
+span.superscript{
+	vertical-align:Super;
+	font-size:80%;
+}
+span.subscript{
+	vertical-align:Sub;
+	font-size:80%;
+}
+span.underline{
+	text-decoration:Underline;
+}
+span.color_white{
+	color:#FFFFFF;
+}
+span.color_blue{
+	color:#0000FF;
+}
+span.color_red{
+	color:#FF0000;
+}
+span.color_orange{
+	color:#FFA500;
+}
+span.color_green{
+	color:#008000;
+}
+span.bold\+color_red{
+	color:#FF0000;
+	font-weight:Bold;
+}
+span.bold\+italic{
+	font-style:Italic;
+	font-weight:Bold;
+}
+span.bold\+superscript{
+	vertical-align:Super;
+	font-size:80%;
+	font-weight:Bold;
+}
+span.bold\+underline{
+	text-decoration:Underline;
+	font-weight:Bold;
+}
+span.italic\+superscript{
+	vertical-align:Super;
+	font-size:80%;
+	font-style:Italic;
+}
+span.yenmark{
+	font-family:"MS PGothic","Osaka","Arial","Helvetica",Sans-serif;
+}
+span.yenmark\+italic{
+	font-family:"MS PGothic","Osaka","Arial","Helvetica",Sans-serif;
+	font-style:Italic;
+}
+span.bold\+color_orange{
+	color:#FFA500;
+	font-weight:Bold;
+}
+span.bold\+superscript\+color_red{
+	color:#FF0000;
+	vertical-align:Super;
+	font-size:80%;
+	font-weight:Bold;
+}
+span.bold\+superscript\+color_orange{
+	color:#FFA500;
+	vertical-align:Super;
+	font-size:80%;
+	font-weight:Bold;
+}
+span.bold\+no_break{
+	white-space:Nowrap;
+	font-weight:Bold;
+}
+span.bold\+no_break\+superscript{
+	white-space:Nowrap;
+	font-weight:Bold;
+	vertical-align:Super;
+	font-size:80%;
+}
+span.no_break\+superscript{
+	white-space:Nowrap;
+	vertical-align:Super;
+	font-size:80%;
+}
+span.superscript\+color_red{
+	color:#FF0000;
+	vertical-align:Super;
+	font-size:80%;
+}
+span.superscript\+color_orange{
+	color:#FFA500;
+	vertical-align:Super;
+	font-size:80%;
+}
+span.ui_text{
+}
+span.ui_bold{
+	font-weight:Bold;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+div#id_breadcrumbs{
+	font-size:70%;
+	position:Absolute;
+	left:5px;
+	top:10px;
+	z-index:1;
+	cursor:Default;
+	display:None;
+}
+div#id_breadcrumbs a{
+	margin:0px 5px;
+}
+div#id_breadcrumbs a:link{
+	color:#0000FF;
+}
+div#id_breadcrumbs a:visited{
+	color:#0000FF;
+}
+span.style_name{
+	font:Normal 8pt "Tahoma";
+	color:#FF0000;
+	margin:0px 5px;
+}
+div.open_close_all{
+	font-size:80%;
+	margin:5px 10px 5px 30px;
+	color:#3366A5;
+	text-align:Right;
+}
+div.open_close_next_sibling{
+	font-size:80%;
+	margin:5px 10px 5px 30px;
+	color:#3366A5;
+	text-align:Right;
+}
+div#id_content div.open_close_all a:hover,
+div#id_content div.open_close_next_sibling a:hover{
+	text-decoration:None;
+}
+a.open_all:hover,
+a.close_all:hover,
+a.open_next_sibling:hover,
+a.close_next_sibling:hover{
+	border-bottom:Solid 1px #3366A5;
+}
+a.open_all,
+a.close_all,
+a.open_next_sibling,
+a.close_next_sibling{
+	border-bottom:Dotted 1px #3366A5;
+	padding-right:15px;
+}
+a.open_all{
+	margin-right:5px;
+}
+a.open_next_sibling{
+}
+a.close_all,
+a.close_next_sibling{
+}
+div.invisible_begin{
+	color:#FFFFFF;
+	font-size:80%;
+	text-align:Right;
+}
+div.invisible_end{
+	color:#FFFFFF;
+	font-size:80%;
+	text-align:Right;
+}
+div.invisible{
+	display:None;
+	border-right:Dotted 1px #808080;
+	margin-right:10px;
+}
+@media print{
+div.open_close_all{
+	display:None;
+}
+div.open_close_next_sibling{
+	display:None;
+}
+div.invisible{
+	display:Block;
+	border-right:None;
+	margin-right:0px;
+}}
+div.hr{
+	border-top:Solid 2px #808080;
+	margin:25px 10px 0px 10px;
+	font-size:0pt;
+	color:#FFFFFF;
+}
+hr{
+	color:#808080;
+	background-color:#808080;
+	margin:25px 10px 0px 10px;
+	height:2px;
+	border:0;
+}
+-->
+		</style>
+	</head>
+	<body>
+		<!--CONTENT_START-->
+		<div id="id_content">
+			<div class="h1"><a id="d9ad9f09dd303ad36506b606b6b6475a"></a>Canon Generic PS3 Driver2 - Version 3.00 for Microsoft Windows</div>
+			<hr />
+			<div class="text">Windows、Windows Vistaは、米国Microsoft Corporationの米国およびその他の国における登録商標または商標です。</div>
+			<div class="text">その他、本文中の社名や商品名は、各社の登録商標または商標です。</div>
+			<div class="h2"><a id="5066f258cd323b30ed87dd19bb138d8b"></a>目次</div>
+			<div class="text"><a href="#52e65a8f7f783db03ef18d6a35581af4">ご使用になる前に</a></div>
+			<div class="text_level1"><a href="#0a4d01020d95a2cc756ecfbc3a0e2023">1. はじめに</a></div>
+			<div class="text_level1"><a href="#9db2e7e326647e416058fd1ec41f98bd">2. 本プリンタードライバーの特長</a></div>
+			<div class="text_level1"><a href="#b18dc7ade5001fc70477b344c542fa41">3. プリンタードライバーの使用環境</a></div>
+			<div class="text_level1"><a href="#769a0f131f78361f9c257989bd69aa7a">4. プリンタードライバーのインストール方法</a></div>
+			<div class="text"><a href="#9f3d827e95adaed8404cf4664958270d">ご使用について</a></div>
+			<div class="text_level1"><a href="#faa919b40eda01a21ddffa835c7f9b22">1. 印刷設定の方法</a></div>
+			<div class="text_level1"><a href="#999a58e12a17c2e7f7e0442d90be64b7">2. 使用上の注意</a></div>
+			<div class="text"><a href="#d1edef408575bdbd0be9b904d48340dd">お客様相談センター</a></div>
+			<div class="h2"><a id="52e65a8f7f783db03ef18d6a35581af4"></a>ご使用になる前に</div>
+			<div class="h3"><a id="0a4d01020d95a2cc756ecfbc3a0e2023"></a>1. はじめに</div>
+			<div class="text">このたびは「Canon Generic PS3 Printer Driver2 for Microsoft Windows」をご利用いただきまして、誠にありがとうございます。本製品をご利用いただくことにより、Windowsで動作する各種アプリケーションソフトから美しく印刷が行えます。</div>
+			<div class="h3"><a id="9db2e7e326647e416058fd1ec41f98bd"></a>2. 本プリンタードライバーの特長</div>
+			<div class="text">本プリンタードライバーは以下の特長があります。</div>
+			<div class="list">プリンタードライバーの便利な設定が、あらかじめ[お気に入り]として用意してあります。また、よく使う独自の設定登録もできます。</div>
+			<div class="list">印刷する原稿の内容に合わせて最適な印刷モードが選べます。原稿の内容に合わせて印刷目的を選択するだけで、最適な印刷モードで印刷できます。</div>
+			<div class="list">各ページごとに現在の設定が画面(プレビュー)に表示されます。プレビュー画面を見ながら印刷出力の確認ができます。</div>
+			<div class="list">本ドライバーはCanon Driver Configuration Toolに対応しています。<br />Canon Driver Configuration Toolを使用すると、初期値をカスタマイズしたプリンタードライバーのインストールセットを作成することができます。詳細は、Canon Driver Configuration Tool ユーザーズガイドを参照してください。</div>
+			<div class="h3"><a id="b18dc7ade5001fc70477b344c542fa41"></a>3. プリンタードライバーの使用環境</div>
+			<div class="text">本プリンタードライバーは以下のシステムおよび環境でご使用ください。</div>
+			<div class="h4">OS</div>
+			<div class="text">Windows Vista</div>
+			<div class="text">Windows 7</div>
+			<div class="text">Windows 8</div>
+			<div class="text">Windows 8.1</div>
+			<div class="text">Windows Server 2003</div>
+			<div class="text">Windows Server 2003 R2</div>
+			<div class="text">Windows Server 2008</div>
+			<div class="text">Windows Server 2008 R2</div>
+			<div class="text">Windows Server 2012</div>
+			<div class="text">Windows Server 2012 R2</div>
+			<div class="h4">サーバーベースコンピューティング環境</div>
+			<div class="h5">サーバー環境</div>
+			<div class="text">Windows Server 2008</div>
+			<div class="text">Windows Server 2008 R2</div>
+			<div class="text">Windows Server 2012</div>
+			<div class="text">Windows Server 2012 R2</div>
+			<div class="h5">サーバーコンポーネント</div>
+			<div class="text">Citrix Presentation Server 4.5</div>
+			<div class="text">Citrix XenApp 5.0</div>
+			<div class="text">Citrix XenApp 6.0</div>
+			<div class="text">Citrix XenApp 6.5</div>
+			<div class="text">Citrix XenApp 7.5</div>
+			<div class="text">Citrix XenApp 7.6</div>
+			<div class="text">Citrix XenDesktop 4.0</div>
+			<div class="text">Citrix XenDesktop 5.0</div>
+			<div class="text">Citrix XenDesktop 5.5</div>
+			<div class="text">Citrix XenDesktop 5.6</div>
+			<div class="text">Citrix XenDesktop 7.0</div>
+			<div class="text">Citrix XenDesktop 7.1</div>
+			<div class="text">Citrix XenDesktop 7.5</div>
+			<div class="text">Citrix XenDesktop 7.6</div>
+			<div class="h5">クラスタリングサーバ</div>
+			<div class="text">Microsoft Windows Server 2008 Enterprise/Datacenter Edition</div>
+			<div class="text">Microsoft Windows Server 2008 R2 Enterprise/Datacenter Edition</div>
+			<div class="text">Microsoft Windows Server 2012</div>
+			<div class="text">Microsoft Windows Server 2012 R2</div>
+			<div class="h4">ハードウェア</div>
+			<div class="text">上記ソフトウェアが動作するコンピューター</div>
+			<div class="h3"><a id="769a0f131f78361f9c257989bd69aa7a"></a>4. プリンタードライバーのインストール方法</div>
+			<div class="text">実際にプリンターで出力させるには、プリンタードライバーをWindowsに組み込む作業が必要です。次の手順に従ってプリンタードライバーをインストールしてください。<br />インストールする前にAdministratorsのメンバーとしてWindowsにログオンしてください。<br />インストールの注意事項については、「2.使用上の注意」の「インストール時の制限事項」の項目を参照してください。</div>
+			<div class="annotation">(※) 本ソフトウェアをインストールする前には、必ず他のアプリケーションソフトを終了してください。また、既存のセットアップしてあるプリンタードライバーも同様に終了してください。</div>
+			<div class="h4">プリンタードライバーをインストールする</div>
+			<div class="h5">ポートを手動で設定する場合</div>
+			<div class="text"><span class="bold">(1) [Setup.exe]アイコンをダブルクリックして、インストーラーを起動します。</span></div>
+			<div class="annotation">(※) お使いの環境によっては、[Setup.exe]アイコンは[Setup]と表示されます。</div>
+			<div class="text"><span class="bold">(2) ウィザードが表示されます。[言語]でインストールするドライバーの言語を選択し、[次へ]をクリックします。インストールされるドライバの言語は、この設定に応じて設定されます。</span></div>
+			<div class="text"><span class="bold"><span class="bold">(3) 使用許諾契約書が画面に表示されます。内容を確認したあと、[はい]をクリックします</span>。</span></div>
+			<div class="text"><span class="bold">(4) セットアップの実行方法の選択ダイアログボックスが表示されます。[新しいプリンターの追加]か[新しいプリンターの追加と既存プリンタードライバーの更新]を選択し、[次へ]をクリックします。</span></div>
+			<div class="text"><span class="bold">(5) ドロップダウンメニューから[使用するポート]を選択するか、[ポートの追加]をクリックしたあと、[次へ]をクリックします。</span></div>
+			<div class="text"><span class="bold">(6) インストール設定をチェックしたあと、[開始]をクリックします。</span> </div>
+			<div class="text"><span class="bold">(7) [終了]をクリックし、インストールを終了します。</span></div>
+			<div class="text_level1">Windowsのアプリケーションから、印刷する準備ができました。</div>
+			<div class="h5">プリンターフォルダーの[プリンターの追加]で行う場合</div>
+			<div class="text"><span class="bold">(1) プリンターフォルダーを表示します。</span></div>
+			<div class="dash">Windows Server 2003/2003 R2： [スタート]－[設定]－[プリンタとFAX]</div>
+			<div class="dash">Windows Vista/Server 2008： [スタート]－[コントロールパネル]－[プリンタ]</div>
+			<div class="dash">Windows 7/Server 2008 R2： [スタート]－[デバイスとプリンター]</div>
+			<div class="dash">Windows 8/8.1/Server 2012/2012 R2：デスクトップで画面右側のチャームを表示したあと、[設定]－[コントロールパネル]－[デバイスとプリンター]</div>
+			<div class="dash">上記以外： [スタート]－[設定]－[プリンタ] </div>
+			<div class="text"><span class="bold">(2) [プリンターの追加]アイコンをダブルクリックし、[プリンターの追加]ウィザードを起動します。</span></div>
+			<div class="text"><span class="bold">(3) プリンターの機種を選択する画面で[ディスク使用]を選択して、[次へ]をクリックします。</span></div>
+			<div class="text"><span class="bold">(4) [参照]をクリックして、「inf」ファイルを指定します。</span></div>
+			<div class="text_level1">\PS\32BIT\Driver</div>
+			<div class="text_level1">\PS\x64\Driver</div>
+			<div class="text_level1"></div>
+			<div class="annotation">(※) お使いのドライバーによっては上記のパスと異なる場合があります。 </div>
+			<div class="text"><span class="bold">(5) お使いの環境によっては、現在のドライバーを使用するか新しいドライバーに置き換えるか選択します。このときは、必ず[新しいドライバーに置き換える]を選択してください。</span></div>
+			<div class="text"><span class="bold">(6) 以下、画面の指示にしたがってインストールを行います。</span></div>
+			<div class="text"><span class="bold">(7) インストールが完了したら、Windowsを再起動します。</span></div>
+			<div class="text_level1">以上でインストールの作業が終了しました。</div>
+			<div class="h5"><a id="fed17d52b471c682374a0ae654fc6708"></a>プリンタードライバーをアンインストールする</div>
+			<div class="text"><span class="bold">(1) [スタート]メニューから[コントロールパネル]を選択します。</span></div>
+			<div class="text_level1">Windows 8/8.1/Server 2012/2012 R2の場合：デスクトップで画面右側のチャームを表示したあと、[設定]－[コントロールパネル]</div>
+			<div class="text"><span class="bold">(2) [プログラム]－[プログラムのアンインストール]をクリックして、アンインストールしたいドライバーのアンインストーラーを選択したあと、[アンインストール]（または[アンインストールと変更]）をクリックします。</span></div>
+			<div class="dash">Windows Vista/Server 2008：[プログラム]－[プログラムと機能]の[プログラムのアンインストール]をクリックして、アンインストールしたいドライバーのアンインストーラーを選択→[アンインストール]をクリック</div>
+			<div class="dash">Windows Server 2003/2003 R2：[プログラムの追加と削除]をダブルクリックして[プログラムの追加と削除]ダイアログボックスを表示→アンインストールしたいドライバーのアンインストーラーを選択→[変更と削除]をクリック</div>
+			<div class="text"><span class="bold">(3) アンインストールするデバイス名を選択 し、[削除]をクリックします。</span></div>
+			<div class="annotation">(※)[クリーンアップ]をクリックすると、選択されているドライバーだけでなく、一覧に表示されたすべてのドライバーに関連するファイルやレジストリ情報なども同時に削除する場合にクリックします。通常は、[削除]でアンインストールを行ってください。</div>
+			<div class="text"><span class="bold">(4) アンインストールを確認するメッセージが表示されます。[はい]をクリックします。アンインストールが開始されます。</span></div>
+			<div class="text"><span class="bold">(5) [終了]をクリックします。</span></div>
+			<div class="text_level1">付属のCD-ROMからドライバーをアンインストールすることもできます。以下のフォルダーに保存されている[UNINSTAL.exe]アイコンをダブルクリックしてください。</div>
+			<div class="text_level1">\PS\32BIT\misc<br />\PS\x64\misc</div>
+			<div class="annotation"></div>
+			<div class="h3"><a id="9f3d827e95adaed8404cf4664958270d"></a>ご使用について</div>
+			<div class="h4"><a id="faa919b40eda01a21ddffa835c7f9b22"></a>1. 印刷設定の方法</div>
+			<div class="text">本プリンタードライバーには、各種の印刷設定機能が用意されています。印刷に関する各設定を行うときは次の手順を参考に設定してください。</div>
+			<div class="h5"><a id="74b46abbb84ed1bba693d7257f1db82a"></a>プリンターフォルダーから設定する場合</div>
+			<div class="text">以下で設定した項目は、印刷時に毎回有効となります。実際に印刷するには、次の「アプリケーションソフトから設定する場合」を参照してください。</div>
+			<div class="text"><span class="bold">(1) プリンターフォルダーを表示します。</span></div>
+			<div class="text_level2">Windows Server 2003/2003 R2： [スタート]－[設定]－[プリンタとFAX]</div>
+			<div class="text_level2">Windows Vista/Server 2008： [スタート]－[コントロールパネル]－[プリンタ]</div>
+			<div class="text_level2">Windows 7/Server 2008 R2： [スタート]－[デバイスとプリンター]</div>
+			<div class="text_level2">Windows 8/8.1/Server 2012/2012 R2： デスクトップで画面右側のチャームを表示したあと、[設定]－[コントロールパネル]－[デバイスとプリンター]</div>
+			<div class="text_level2">上記以外： [スタート]－[設定]－[プリンタ] </div>
+			<div class="text"><span class="bold">(2) プリンター名のアイコンをダブルクリックします。</span></div>
+			<div class="text"><span class="bold">(3) [プリンタ]メニューの[プリンターのプロパティ]または[プロパティ]を選択して、プリンターオプションに関する設定を行います。</span></div>
+			<div class="text_level1">さらに[プリンタ]メニューの[印刷設定]、(Windows Vista/Server 2008の場合は[印刷設定の選択])を選択し、各ドキュメントの既定値(アプリケーションソフトで行うときのデフォルト値)を設定します。これらの設定を行うためには、プリンターの設定に関するフルコントロールアクセス権が必要です。 </div>
+			<div class="text"><span class="bold">(4) 設定が終了したら、[OK]をクリックします。</span></div>
+			<div class="h5"><a id="794ff74100eb87db0cac726e3f68e502"></a>アプリケーションソフトから設定する場合</div>
+			<div class="text">以下で設定した項目は、印刷時のみ有効となります。アプリケーション終了後、設定は保持されません。</div>
+			<div class="text"><span class="bold">(1) アプリケーションソフトの印刷コマンドを実行して、印刷ダイアログボックスを表示します。</span></div>
+			<div class="text"><span class="bold">(2) 印刷ダイアログボックスで、お使いのプリンターを選択して、[プロパティ]または[詳細設定]をクリックします。 </span></div>
+			<div class="text"><span class="bold">(3) 必要な機能の設定を行ってください。</span></div>
+			<div class="text"><span class="bold">(4) 設定が終了したら、[OK]をクリックします。 </span></div>
+			<div class="h5"><a id="2deb02a4748e47b172f2009281f12d4b"></a>ヘルプの表示方法</div>
+			<div class="text">設定方法の詳細は、ヘルプを参照してください。[ヘルプ]をクリックすると、プリンタードライバーについての説明が表示されます。</div>
+			<div class="h4"><a id="999a58e12a17c2e7f7e0442d90be64b7"></a>2. 使用上の注意</div>
+			<div class="text">本ソフトウェアのご使用に際しては、以下のような制限事項があります。ご使用にあたってはあらかじめこれらの点にご注意ください。</div>
+			<div class="h5"><a id="8e8e584eb5e40787706d9a477532e724"></a>インストール時の制限事項</div>
+			<div class="list">お使いのコンピューターのユーザー権限を切り替えてインストーラーを実行した場合は、正しくインストールできないことがあります。そのときは、管理者権限(Administrator)でコンピューターに再ログインした後に、再度インストールしてください。</div>
+			<div class="list">すでに本バージョンのプリンタードライバーをインストールしているコンピューターに以前のバージョンのプリンタードライバーをインストールする場合、[現在のファイルをそのまま使いますか？]というダイアログボックスが表示されることがありますが、そのときは必ず[はい]をクリックしてください。</div>
+			<div class="list">インストーラーをお使いの場合、再起動を促すメッセージ表示があった際は必ず再起動してください。再起動を行わないと、既存のプリンタードライバーが正しく動作しないことがあります。</div>
+			<div class="list">Windows Server OSにおけるServer Coreをご使用の場合は、プリンタードライバーのインストーラーは使用できません。プリンタードライバーのインストールにはOSのインストール機能をお使いください。</div>
+			<div class="h5"><a id="976f9e3fcc2a98407f8dcc5924a04bc1"></a>印刷時の制限事項</div>
+			<div class="list">ユーザー設定用紙を登録するには、Administrator権限でログオンして[デバイスとプリンター]フォルダー(Windows Server 2003/2003 R2の場合は[プリンタとFAX]フォルダー、Windows Vista/Server 2008の場合は[プリンタ]フォルダー)からプリンタードライバーの印刷設定画面を表示し、[ページ設定]-[ユーザー設定用紙]ダイアログボックスで設定を行ってください。</div>
+			<div class="list">アプリケーションから奇数ページの文書を両面印刷すると、アプリケーションによって自動的にページ調整の白紙が挿入されることがあります。この場合、アプリケーションが挿入する白紙出力もカウントアップの対象となります。</div>
+			<div class="list">[デバイスとプリンター]フォルダー(Windows Server 2003/2003 R2の場合は、[プリンタとFAX]フォルダー、Windows Vista/Server 2008の場合は[プリンタ]フォルダー)のプリンター名称を変更する場合、プリンタードライバーで登録した一部のお気に入りの設定(ドキュメントプロパティーから追加したお気に入り)が削除されます。その場合は、プリンターの名称を変更する前にお気に入りの設定をファイルに保存し、プリンターの名称変更後に保存したファイルを読み込んでください。</div>
+			<div class="list">アプリケーションソフトによっては、PostScriptプリンタードライバーであることを認識すると、アプリケーション自身がPostScriptの印刷コマンドを出力する場合がります。このようなアプリケーションにおいては、次の機能が正しく動作しないことがあります。<br />ただし、[デバイスの設定]-[アプリケーションからのPS出力]において、[しない]を指定するとプリンタードライバーの機能を用いて正しく印刷できることもあります。　</div>
+			<div class="dash">[ページ設定]-[ページレイアウト]</div>
+			<div class="dash">[ページ設定]-[スタンプ]</div>
+			<div class="dash">[ページ設定]-[倍率を指定する]</div>
+			<div class="dash">[印刷品質]-[ネガポジ反転する]</div>
+			<div class="dash">[印刷品質]-[鏡像にする]</div>
+			<div class="dash">[給紙]-[給紙方法]</div>
+			<div class="list">一部の言語において、ジョブ名、ユーザー名、保存出力時の印刷データ名等が、プリンター本体で元の文字列と異なって表示される場合があります。<br />その場合、プリンター本体の表示言語を表示したい文字列の言語に合わせると、正しく表示されることがあります。</div>
+			<div class="list">本プリンタードライバーをサーバーベースコンピューティング環境でお使いの場合、クライアントコンピューターで対応OSを使用していないときは、プリンタードライバーは使用されません。</div>
+			<div class="list">お使いのプリンターが両面印刷に対応している場合、印刷設定のデフォルトは両面印刷です。</div>
+			<div class="list">[基本設定]/[印刷品質]タブでは、[カラーモード]で[自動(カラー/白黒)]を選択したとき、白黒ページが、データやアプリケーション、またはドライバーの設定によって、カラーページとしてカウントされることがあります。もし白黒印刷ジョブとしてドキュメントを印刷したい場合は、[カラーモード]で[白黒]を選択してください。</div>
+			<div class="list">[デバイスの設定]タブ-[仕上げ設定]の各機能（両面、ホチキスなど）を設定できるユーザー設定用紙サイズは、プリンターによって異なります。詳細はお使いのプリンターのマニュアルを参照してください。</div>
+			<div class="list">お使いの環境によっては、[お気に入り]やユーザー設定用紙の名称が文字化けすることがあります。その場合は、該当する言語パックをインストールしてください。</div>
+			<div class="list">お使いのプリンターによっては、［デバイスの設定］タブ-［デバイス情報を取得］を実行すると、使用できない機能が取得される場合があります。</div>
+			<div class="list">キヤノンのLBPプリンターで印刷する場合、[Canonデバイスの独自モード]が[使わない]に設定されているときは、プリンター本体の操作パネルで、印刷ジョブ名とユーザー名が「--」と表示されることがあります。</div>
+			<div class="list">キヤノンのLBPプリンターで印刷する場合、[Canonデバイスの独自モード]が[使わない]に設定されているときは、[セキュアプリント]を設定しても、[暗証番号]の認証をせずに印刷されることがあります。</div>
+			<div class="list">以下の設定をして、2部以上印刷する場合、[セキュアプリント]で設定した[暗証番号]1回の入力につき、1部しかプリントされないことがあります。</div>
+			<div class="dash">[デバイスの設定] - [詳細設定] - [仕上げ] - [ソート(デバイス側)] - [使わない]</div>
+			<div class="dash">[排紙方法] - [ソート]</div>
+			<div class="dash">[出力方法] - [セキュアプリント]</div>
+			<div class="text_level2">このときすべての部数を印刷するには、[暗証番号]を印刷部数分入力する必要があります。[アプリケーションからのPS出力]において、[しない]を指定すると、[暗証番号]1回の入力で、すべての部数が印刷されます。</div>
+			<div class="list">以下の設定を指定して、2部以上印刷する場合、プリンター本体で指定された印刷部数分、印刷ジョブが保存され、それぞれの印刷部数が1になることがあります。</div>
+			<div class="dash">[デバイスの設定] - [詳細設定] - [仕上げ] - [ソート(デバイス側)] - [使わない]</div>
+			<div class="dash">[排紙方法] - [ソート]</div>
+			<div class="dash">[出力方法] - [保存]</div>
+			<div class="text_level2">[アプリケーションからのPS出力]において、[しない]を指定すると、この現象はなくなります。</div>
+			<div class="h5">デバイスの設定の制限事項</div>
+			<div class="list">本プリンターを使用する際、あらかじめ、プリンターのプロパティダイアログボックスの[デバイスの設定]タブでデバイス情報を取得してオプション情報を設定する必要があります。お使いのプリンターにない機能をプリンタードライバーで設定した場合、意図しない出力となる場合があります。</div>
+			<div class="dash">プリンターに装着していない給紙部を指定すると、プリンター本体の優先給紙部から給紙されます。</div>
+			<div class="dash">指定した給紙部と用紙サイズの組み合わせが一致しないと、エラーになります。</div>
+			<div class="dash">両面印刷ができないプリンターで両面印刷を指定すると、片面印刷になります。</div>
+			<div class="dash">ホチキスどめできないプリンターでホチキスどめを指定した場合、ホチキスどめされずに印刷されます。</div>
+			<div class="dash">中とじできないプリンターで中とじを指定した場合、中とじされずに印刷されます。</div>
+			<div class="dash">ボックス保存ができないプリンターで[出力方法]-[保存]を選択して印刷した場合、通常印刷されます。また、プリンター本体のパネルにエラーが表示されてオフラインとなる場合、プリンター本体をオンラインにすると印刷されます。</div>
+			<div class="dash">部門別ID管理機能がないプリンターで部門別ID管理を設定して印刷した場合、エラーになります。</div>
+			<div class="list">使用するプリンターによっては、以下の場合、通常よりプリントに時間がかかることがあります。</div>
+			<div class="dash">A4(横)用紙を給紙部から印刷するときに、縦向き印刷を指定した場合。</div>
+			<div class="dash">A4(縦)用紙を給紙部から印刷するときに、横向き印刷を指定した場合。</div>
+			<div class="dash">A3用紙の横向き印刷を指定した場合。</div>
+			<div class="list">白黒プリンターでカラー印刷を指定すると、白黒で出力されますが、画質が劣化したり印刷に時間がかかる場合があります。</div>
+			<div class="list">本プリンタードライバーにはない機能を、お使いのプリンター本体の操作パネルで設定している場合、プリンター本体の設定が有効になって印刷されます。たとえば、プリンター本体側でOHPフィルムの間に用紙をはさむ機能を有効にしていると、印刷時にOHPフィルムの間に用紙がはさまれたり、プリンター本体側の部数印字の機能を有効にしていると部数印字されて印刷されます。</div>
+			<div class="list">[デバイスの設定]タブ-[デバイス情報を取得]で、装着されているオプションと[デバイスの設定]タブの設定は自動取得され、[デバイスの設定]タブの設定項目の多くが自動で設定されます。ただし[詳細設定]ダイアログボックスの設定項目の一部は、手動設定が必要です。[デバイス情報を取得]で設定を取得してから、手動設定が必要な項目を設定してください。</div>
+			<div class="h5">Canon Driver Configuration Tool 使用時の制限事項</div>
+			<div class="list">[印刷設定]の各タブで設定できる項目は、[デバイスの設定]タブの設定によって異なります。Canon Driver Configuration Toolを使用してこのドライバーをカスタマイズする場合、[デバイスの設定]タブを設定してから、[印刷設定]の各タブを設定してください。</div>
+			<div class="h5">特定プリンター制限事項</div>
+			<div class="list">iRシリーズのプリンターでボックス保存をするとき、印刷設定(片面印刷/両面印刷)や給紙設定、ページレイアウトや倍率設定がプリンター本体の操作パネルに正しく表示されないことがありますが、印刷結果には、正しく反映されます。</div>
+			<div class="list">iRシリーズのプリンターで、プリンター本体の操作パネルで、横向きにホチキス位置指摘をした印刷データをボックス保存指定した場合、実際の印刷結果では、ホチキスどめの位置が、設定と異なることがあります。</div>
+			<div class="list">iRシリーズのプリンターで、指定できない位置にホチキスどめを指定した場合、ホチキスどめされずに印刷されます。</div>
+			<div class="h4"><a id="d1edef408575bdbd0be9b904d48340dd"></a>お客様相談センター</div>
+			<div class="text">本ソフトウェアの操作方法などについてご質問やご不明な点などがございましたら、取扱説明書に記載されているお客様相談センターまでお問い合わせください。<br />また、ソフトウェアに関する情報は、キヤノンホームページ(http://canon.jp/)をご覧ください。</div>
+			<hr />
+			<div class="text_right">Copyright CANON INC. 2012</div>
+		</div>
+		<!--CONTENT_END-->
+	</body>
+</html>
