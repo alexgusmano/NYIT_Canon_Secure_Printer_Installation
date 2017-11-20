@@ -121,24 +121,7 @@ namespace AutoPrintP1
                     printKeyAddBnW2.SetValue("DataTimeout",300, Microsoft.Win32.RegistryValueKind.DWord);
                     printKeyAddBnW2.Close();
                     
-                    ///////////Add ColorPort////////////
-                    Microsoft.Win32.RegistryKey printKeyAddColor1;
-                    printKeyAddColor1 = Microsoft.Win32.Registry.LocalMachine.CreateSubKey("SYSTEM\\CurrentControlSet\\Control\\Print\\Monitors\\LPR Port\\Ports\\acaduniflow.nyit.edu:Canon_Secure_Print_Color");
-                    printKeyAddColor1.SetValue("Server Name", "acaduniflow.nyit.edu");
-                    printKeyAddColor1.SetValue("Printer Name", "Canon_Secure_Print_Color");
-                    printKeyAddColor1.SetValue("OldSunCompatibility", 00000000, Microsoft.Win32.RegistryValueKind.DWord);
-                    printKeyAddColor1.SetValue("HpUxCompatibility", 00000000, Microsoft.Win32.RegistryValueKind.DWord);
-                    printKeyAddColor1.SetValue("EnableBannerPage", 00000000, Microsoft.Win32.RegistryValueKind.DWord);
-                    printKeyAddColor1.Close();
-
-                    Microsoft.Win32.RegistryKey printKeyAddColor2;
-                    printKeyAddColor2 = Microsoft.Win32.Registry.LocalMachine.CreateSubKey("SYSTEM\\CurrentControlSet\\Control\\Print\\Monitors\\LPR Port\\Ports\\acaduniflow.nyit.edu:Canon_Secure_Print_Color\\Timeouts");
-                    printKeyAddColor2.SetValue("CommandTimeout", 120, Microsoft.Win32.RegistryValueKind.DWord);
-                    printKeyAddColor2.SetValue("DataTimeout", 300, Microsoft.Win32.RegistryValueKind.DWord);
-                    printKeyAddColor2.Close();
-
                     
-
                     pNet2.StartInfo.FileName = "net.exe";
                     pNet2.StartInfo.Arguments = "start spooler";
                     pNet2.StartInfo.UseShellExecute = false;
@@ -167,8 +150,7 @@ namespace AutoPrintP1
                     
                     ////////////////////Install Color///////////////////
 
-                    Microsoft.Win32.RegistryKey printerColorExist = Microsoft.Win32.Registry.LocalMachine.OpenSubKey("SYSTEM\\CurrentControlSet\\Control\\Print\\Printers\\Canon Secure Print Color", false);
-
+                    
                     if (printerColorExist == null)//registry key doesn't exist
                     {
                         pDll1.StartInfo.FileName = "rundll32.exe";
