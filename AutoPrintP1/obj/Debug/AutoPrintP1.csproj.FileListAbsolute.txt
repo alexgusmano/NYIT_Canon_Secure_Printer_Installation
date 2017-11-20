@@ -1,0 +1,16 @@
+C:\Users\Alexander\Documents\Academic\AutoIt\AutoPrintP1\AutoPrintP1\bin\Debug\AutoPrintP1.exe.config
+C:\Users\Alexander\Documents\Academic\AutoIt\AutoPrintP1\AutoPrintP1\bin\Debug\AutoPrintP1.exe
+C:\Users\Alexander\Documents\Academic\AutoIt\AutoPrintP1\AutoPrintP1\bin\Debug\AutoPrintP1.pdb
+C:\Users\Alexander\Documents\Academic\AutoIt\AutoPrintP1\AutoPrintP1\obj\Debug\AutoPrintP1.csprojResolveAssemblyReference.cache
+C:\Users\Alexander\Documents\Academic\AutoIt\AutoPrintP1\AutoPrintP1\obj\Debug\AutoPrintP1.exe
+C:\Users\Alexander\Documents\Academic\AutoIt\AutoPrintP1\AutoPrintP1\obj\Debug\AutoPrintP1.pdb
+C:\Users\Alexander\Documents\Academic\AutoIt\AutoPrintP1\AutoPrintP1\bin\Debug\Microsoft.Dism.dll
+C:\Users\Alexander\Documents\Academic\AutoIt\AutoPrintP1\AutoPrintP1\bin\Debug\Microsoft.Dism.xml
+C:\Users\Alexander\Documents\Academic\ACS Projects\AutoPrintP1\AutoPrintP1\bin\Debug\AutoPrintP1.exe.config
+C:\Users\Alexander\Documents\Academic\ACS Projects\AutoPrintP1\AutoPrintP1\obj\Debug\AutoPrintP1.exe
+C:\Users\Alexander\Documents\Academic\ACS Projects\AutoPrintP1\AutoPrintP1\obj\Debug\AutoPrintP1.pdb
+C:\Users\Alexander\Documents\Academic\ACS Projects\AutoPrintP1\AutoPrintP1\bin\Debug\AutoPrintP1.exe
+C:\Users\Alexander\Documents\Academic\ACS Projects\AutoPrintP1\AutoPrintP1\bin\Debug\AutoPrintP1.pdb
+C:\Users\Alexander\Documents\Academic\ACS Projects\AutoPrintP1\AutoPrintP1\obj\Debug\AutoPrintP1.Recommended_Restart.resources
+C:\Users\Alexander\Documents\Academic\ACS Projects\AutoPrintP1\AutoPrintP1\obj\Debug\AutoPrintP1.csproj.GenerateResource.Cache
+C:\Users\Alexander\Documents\Academic\ACS Projects\AutoPrintP1\AutoPrintP1\obj\Debug\AutoPrintP1.csprojResolveAssemblyReference.cache
