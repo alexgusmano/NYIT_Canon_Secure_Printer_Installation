@@ -37,8 +37,8 @@ namespace AutoPrintP1
 
             
             var pInstallx64 = ""+home+"PrinterInstall\\x64\\Driver\\cns30ma64.inf";  //64bit driver C:\\Users\\Alexander\\Desktop\\PrinterInstall\\x64\\Driver\\cns30ma64.inf
-            var pConfigx64BnW = "" + home + "\\PrinterInstall\\x64\\CSP_B&W.reg";//BnW.reg
-            var pConfigx64Color = "" + home + "\\PrinterInstall\\x64\\CSP_Color.reg";//Color.reg
+            var pConfigx64BnW = "" + home + "PrinterInstall\\x64\\CSP_B&W.reg";//BnW.reg
+            var pConfigx64Color = "" + home + "PrinterInstall\\x64\\CSP_Color.reg";//Color.reg
             var pServer = "acaduniflow.nyit.edu";
             var pName = "Canon_Secure_Print";
             //When importing registry key it does import the settings for the printer
@@ -138,7 +138,7 @@ namespace AutoPrintP1
 
                     ///////////////////Install B&W///////////////////
 
-                    Microsoft.Win32.RegistryKey printerBnWExist = Microsoft.Win32.Registry.LocalMachine.OpenSubKey("SYSTEM\\CurrentControlSet\\Control\\Print\\Printers\\Canon Secure Print", false);
+                    Microsoft.Win32.RegistryKey printerBnWExist = Microsoft.Win32.Registry.LocalMachine.OpenSubKey("SYSTEM\\CurrentControlSet\\Control\\Print\\Printers\\B&W Canon Secure Print", false);
 
                     if (printerBnWExist == null)//registry key doesn't exist
                     {
@@ -150,11 +150,12 @@ namespace AutoPrintP1
                     
                     ////////////////////Install Color///////////////////
 
+                     Microsoft.Win32.RegistryKey printerColorExist = Microsoft.Win32.Registry.LocalMachine.OpenSubKey("SYSTEM\\CurrentControlSet\\Control\\Print\\Printers\\Color Canon Secure Print", false);
                     
                     if (printerColorExist == null)//registry key doesn't exist
                     {
                         pDll1.StartInfo.FileName = "rundll32.exe";
-                        pDll1.StartInfo.Arguments = "printui.dll,PrintUIEntry /if /b \"Canon Secure Print Color\" /f \"" + home + "PrinterInstall\\x64\\Driver\\cns30ma64.inf\" /r acaduniflow.nyit.edu:canon_secure_print_color /m \"Canon Generic PS3 Driver2\" /z /u";
+                        pDll1.StartInfo.Arguments = "printui.dll,PrintUIEntry /if /b \"Canon Secure Print Color\" /f \"" + home + "PrinterInstall\\x64\\Driver\\cns30ma64.inf\" /r acaduniflow.nyit.edu:canon_secure_print /m \"Canon Generic PS3 Driver2\" /z /u";
                         pDll1.Start();
                         pDll1.WaitForExit();
                     }
